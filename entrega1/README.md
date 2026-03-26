@@ -34,7 +34,7 @@ Ejercitaciones para integrar Modelos de Lenguaje Grande (LLMs) mediante la **API
 - **Archivo:** `src/entrega/01-primera-llamada.ts`
 - **Comando:** `npm run start:llm:01`
 - **Objetivo:** Establecer la conexión básica con el SDK de `@google/generative-ai`.
-- **Qué hace:** Configura tu clave de API, inicializa el modelo `gemini-2.0-flash`, y ejecuta un prompt sencillo para verificar que la autenticación funciona y el modelo responde correctamente.
+- **Qué hace:** Configura tu clave de API, inicializa el modelo `gemini-2.5-flash`, y ejecuta un prompt sencillo para verificar que la autenticación funciona y el modelo responde correctamente.
 
 ### Ejercicio 2: Hiperparámetros de Generación
 - **Archivo:** `src/entrega/02-hiperparametros.ts`

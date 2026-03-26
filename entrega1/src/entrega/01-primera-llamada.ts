@@ -41,7 +41,7 @@ async function parteA() {
   console.log("=== PARTE A: Llamada Básica ===\n");
 
   // Usamos el modelo Gemini 1.5 Flash (gratuito, rápido)
-  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   // Un prompt simple
   const prompt = "¿Qué es la hemoglobina y cuál es su función principal?";
@@ -67,7 +67,7 @@ async function parteB() {
 
   // El "system instruction" le da contexto/rol al modelo ANTES del prompt
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash",
     systemInstruction:
       "Sos un médico clínico explicando resultados de laboratorio a un paciente. " +
       "Usá lenguaje simple, evitá jerga técnica innecesaria. " +
@@ -96,14 +96,14 @@ async function parteC() {
   // TODO 2: Creá un model con un systemInstruction que defina un rol biomédico.
   //         Ejemplos: patólogo, radiólogo, bioinformático, farmacólogo...
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
-    // TODO: Agregá un systemInstruction aquí
+    model: "gemini-2.5-flash",
+    systemInstruction: "Sos un nutricionista clínico experto. Explicá cómo los micronutrientes impactan en las vías metabólicas de forma técnica pero accesible."
   });
 
   // TODO 3: Escribí un prompt relacionado a biomedicina.
   //         Puede ser sobre un diagnóstico, un resultado de laboratorio,
   //         una interacción farmacológica, interpretación de imágenes, etc.
-  const prompt = ""; // <-- Tu prompt aquí
+  const prompt = "Mi paciente tiene niveles bajos de Vitamina B12 y fatiga crónica. ¿Cuál es la relación a nivel celular?"; // <-- Tu prompt aquí
 
   if (!prompt) {
     console.log("⚠️  Completá el TODO 2 y 3 antes de correr esta parte.\n");
@@ -135,7 +135,7 @@ async function main() {
 1. ¿Qué diferencia notaste entre la respuesta de Parte A (sin system
    instruction) y Parte B (con system instruction)?
 
-2. El modelo Gemini 2.0 Flash tiene miles de millones de parámetros internos.
+2. El modelo Gemini 2.5 Flash tiene miles de millones de parámetros internos.
    ¿Pudiste modificar alguno de esos parámetros? ¿Qué SÍ pudiste controlar?
 
 3. ¿Qué pasaría si en el system instruction le dijeras al modelo que es
@@ -147,7 +147,7 @@ async function main() {
   } catch (error: any) {
     if (error.message?.includes("API_KEY")) {
       console.error(
-        "\n❌ Error de API Key. ¿Configuraste tu clave correctamente?"
+        "\n❌ Error de API Key. ¿Configuraste tu clave correctamente?", error
       );
       console.error("   Revisá el README.md para instrucciones.\n");
     } else {

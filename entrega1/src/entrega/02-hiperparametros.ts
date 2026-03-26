@@ -51,7 +51,7 @@ async function generarConConfig(
   label: string
 ) {
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash",
     generationConfig: config,
   });
 
@@ -197,7 +197,7 @@ async function parteD() {
   // ─────────────────────────────────────────────────────────────────────────
 
   // Opción A:
-  // const miPrompt = "Interpretá estos resultados de hemograma: WBC 12.5, RBC 3.8, Hb 11.2, Plt 450";
+  const miPrompt = "Interpretá estos resultados de hemograma: WBC 12.5, RBC 3.8, Hb 11.2, Plt 450";
 
   // Opción B:
   // const miPrompt = "Explicá la fisiopatología del Alzheimer a nivel molecular";
@@ -207,9 +207,6 @@ async function parteD() {
 
   // Opción D (escribí el tuyo):
   // const miPrompt = "...";
-
-  // ⚠️  Borrá esta línea cuando hayas descomentado una opción de arriba:
-  const miPrompt = "";
 
   if (!miPrompt) {
     console.log("\n⚠️  Descomentá una de las opciones de arriba (A, B, C o D) para correr esta parte.\n");
@@ -227,13 +224,13 @@ async function parteD() {
   // ─────────────────────────────────────────────────────────────────────────
 
   // Configuración 1 – "Informe formal": conservadora, determinista, longitud media
-  // await generarConConfig(miPrompt, { temperature: 0.0, maxOutputTokens: 200 }, "Config 1: Informe formal");
+  await generarConConfig(miPrompt, { temperature: 0.0, maxOutputTokens: 200 }, "Config 1: Informe formal");
 
   // Configuración 2 – "Brainstorming": creativa, amplia, sin límite corto
-  // await generarConConfig(miPrompt, { temperature: 1.5, topP: 0.9 }, "Config 2: Brainstorming");
+  await generarConConfig(miPrompt, { temperature: 1.5, topP: 0.9 }, "Config 2: Brainstorming");
 
   // Configuración 3 – "App de telemedicina": respuesta corta y precisa
-  // await generarConConfig(miPrompt, { temperature: 0.3, maxOutputTokens: 80 }, "Config 3: App de telemedicina");
+  await generarConConfig(miPrompt, { temperature: 0.3, maxOutputTokens: 80 }, "Config 3: App de telemedicina");
 }
 
 // ---------------------------------------------------------------------------
@@ -247,7 +244,7 @@ async function parteE() {
 
   const prompt = "Nombrá los 4 tipos principales de tejido humano.";
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.5-flash",
     generationConfig: { temperature: 0.0 },
   });
 
