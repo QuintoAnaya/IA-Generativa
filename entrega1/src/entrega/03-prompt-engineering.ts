@@ -200,8 +200,46 @@ async function parteE() {
   // BONUS: ¿Podés hacer que el modelo detecte si le falta información
   //        y la pida explícitamente en vez de inventarla?
 
-  const miSystemInstruction = ""; // <-- TODO: Tu system instruction
-  const miPrompt = ""; // <-- TODO: Tu prompt
+  const miSystemInstruction = `Sos un médico especialista en medicina interna y hematología con décadas de experiencia clínica.
+Tu objetivo es analizar casos clínicos complejos, llegar a un diagnóstico preciso y sugerir un plan de acción.
+REGLAS ESTRICTAS:
+1. Tu respuesta DEBE ser ÚNICAMENTE un objeto JSON válido, sin texto adicional antes o después, y sin bloques de código markdown (como \`\`\`json).
+2. Debés aplicar "Chain of Thought" (razonamiento paso a paso), detallando tu análisis lógico en un array antes de dar la conclusión clínica.
+3. [REGLA BONUS ANTI-ALUCINACIÓN]: NO asumas ni inventes valores de laboratorio, antecedentes o síntomas que no estén explícitos. Si considerás que falta información CRÍTICA para confirmar el diagnóstico, poné el campo "falta_informacion_critica" en true y listá explícitamente lo que necesitás pedirle al paciente o laboratorio en "informacion_solicitada".
+4. El JSON de salida DEBE tener la siguiente estructura exacta:
+{
+  "razonamiento_paso_a_paso": ["paso 1...", "paso 2...", "paso 3..."],
+  "falta_informacion_critica": true|false,
+  "informacion_solicitada": ["...", "..."],
+  "diagnostico_principal": "...",
+  "confianza": "Alta|Media|Baja",
+  "diagnosticos_diferenciales": [
+    { "diagnostico": "...", "razon_descarte": "..." }
+  ],
+  "plan_de_estudios_y_tratamiento": ["...", "..."]
+}`;
+  const miPrompt = `A continuación te presento un caso clínico para analizar. Apegate estrictamente a tu rol y al formato JSON solicitado.
+EJEMPLO DE COMPORTAMIENTO ESPERADO:
+Caso: Hombre 45 años, dolor precordial opresivo irradiado a mandíbula, diaforesis profusa iniciada hace 30 minutos.
+Respuesta del sistema:
+{
+  "razonamiento_paso_a_paso": [
+    "1. Síntomas cardinales: dolor precordial irradiado y diaforesis sugieren alta probabilidad de síndrome coronario agudo (SCA).",
+    "2. Falta de datos: No dispongo de signos vitales, ECG ni biomarcadores cardíacos.",
+    "3. Conclusión parcial: No puedo diagnosticar el tipo exacto de SCA ni descartar un infarto inminente sin un ECG inmediato."
+  ],
+  "falta_informacion_critica": true,
+  "informacion_solicitada": ["Electrocardiograma (ECG) de 12 derivaciones urgente", "Troponinas ultra sensibles", "Signos vitales completos"],
+  "diagnostico_principal": "Síndrome coronario agudo (sospecha altísima)",
+  "confianza": "Baja (requiere confirmación objetiva urgente)",
+  "diagnosticos_diferenciales": [
+    { "diagnostico": "Disección aórtica", "razon_descarte": "Presenta dolor desgarrador típico, pero requiere angioTAC; el SCA es más frecuente." },
+    { "diagnostico": "Tromboembolismo pulmonar", "razon_descarte": "Posible, pero sin disnea evidente y presentación típica coronaria, es secundario." }
+  ],
+  "plan_de_estudios_y_tratamiento": ["Realizar ECG en los próximos 10 minutos", "Manejo inicial empírico para SCA según protocolo", "Extraer enzimas cardíacas"]
+}
+AHORA ANALIZÁ EL SIGUIENTE CASO MÉDICO:
+\${CASO_CLINICO}`;; // <-- TODO: Tu prompt
 
   if (!miPrompt) {
     console.log("\n⚠️  Completá el TODO 2 para correr esta parte.\n");

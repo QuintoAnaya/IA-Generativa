@@ -197,10 +197,10 @@ async function parteD() {
   // ─────────────────────────────────────────────────────────────────────────
 
   // Opción A:
-  const miPrompt = "Interpretá estos resultados de hemograma: WBC 12.5, RBC 3.8, Hb 11.2, Plt 450";
+  // const miPrompt = "Interpretá estos resultados de hemograma: WBC 12.5, RBC 3.8, Hb 11.2, Plt 450";
 
   // Opción B:
-  // const miPrompt = "Explicá la fisiopatología del Alzheimer a nivel molecular";
+  const miPrompt = "Explicá la fisiopatología del Alzheimer a nivel molecular";
 
   // Opción C:
   // const miPrompt = "¿Cuáles son las interacciones farmacológicas peligrosas con warfarina?";

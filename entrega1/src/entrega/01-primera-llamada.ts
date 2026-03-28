@@ -97,13 +97,13 @@ async function parteC() {
   //         Ejemplos: patólogo, radiólogo, bioinformático, farmacólogo...
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
-    systemInstruction: "Sos un nutricionista clínico experto. Explicá cómo los micronutrientes impactan en las vías metabólicas de forma técnica pero accesible."
+    systemInstruction: "Sos un farmacologo experto. Explica los efectos secundarios y las contraindicaciones de los medicamentos sobre los que te consultan tus pacientes."
   });
 
   // TODO 3: Escribí un prompt relacionado a biomedicina.
   //         Puede ser sobre un diagnóstico, un resultado de laboratorio,
   //         una interacción farmacológica, interpretación de imágenes, etc.
-  const prompt = "Mi paciente tiene niveles bajos de Vitamina B12 y fatiga crónica. ¿Cuál es la relación a nivel celular?"; // <-- Tu prompt aquí
+  const prompt = "Mi paciente toma 40 mg de deltisona y 15 mg de metrotexate diarios, puede ralizar deporte sin ninguna preocupacion? Puede tomar bebidas alcoholicas sin problema?"; // <-- Tu prompt aquí
 
   if (!prompt) {
     console.log("⚠️  Completá el TODO 2 y 3 antes de correr esta parte.\n");
