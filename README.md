@@ -33,7 +33,9 @@ cd entrega1 && npm install
 ```
 ia-biomed/
 ├── clase0/          # Guía de configuración del entorno de trabajo
-└── entrega1/        # Clase 1: Fundamentos de AI Generativa
+├── clase2/          # Clase 2: Ejemplos Conceptuales Clásicos
+├── clase3/          # DSPy
+└── entrega1/        # Entrega 1: Fundamentos de AI Generativa
 ```
 
 ---
@@ -48,24 +50,24 @@ Guía para configurar el entorno de trabajo básico necesario para cursar la mat
 
 ---
 
-### Entrega 1 — Fundamentos de AI Generativa
-
-Ejercicios prácticos divididos en dos secciones: conceptos clásicos de IA y uso de LLMs modernos via API.
-
-> 📖 Ver el [README completo de Entrega 1](./entrega1/README.md) para instrucciones detalladas.
-
-#### 💡 Sección 1: Ejemplos Conceptuales (`src/ejemplo`)
+### Clase 2 — Ejemplos Conceptuales Clásicos
 
 Ejemplos locales que **no requieren clave de API**:
+
+> 📖 Ver el [README completo de Clase 2](./clase2/README.md) para instrucciones detalladas.
 
 | Módulo | Descripción | Comando |
 |--------|-------------|---------|
 | `word2vec` | Embeddings y similitud del coseno entre palabras | `npm run start` |
 | `neural-network` | Red neuronal feed-forward para predicción de próxima palabra con One-Hot Encoding | `npm run start:nn` |
 
-#### 📝 Sección 2: Entregable — IA Generativa y APIs (`src/entrega`)
+---
+
+### Entrega 1 — Fundamentos de AI Generativa
 
 Integración con la **API de Google Gemini** (requiere clave de API):
+
+> 📖 Ver el [README completo de Entrega 1](./entrega1/README.md) para instrucciones detalladas.
 
 | Ejercicio | Archivo | Descripción | Comando |
 |-----------|---------|-------------|---------|

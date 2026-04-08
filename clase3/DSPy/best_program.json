@@ -1,0 +1,51 @@
+{
+  "classify.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "review": "An absolute masterpiece. The direction was breathtaking and the acting superb.",
+        "reasoning": "The reviewer uses superlative language (\"absolute masterpiece\"), emphasizes the excellence of the direction and acting, indicating a high level of admiration and praise.",
+        "sentiment": "Positive"
+      },
+      {
+        "augmented": true,
+        "review": "One of the best films I have ever seen. A timeless classic.",
+        "reasoning": "The reviewer uses superlative language, such as \"one of the best films I have ever seen\" and calls it a \"timeless classic\", which indicates a strong positive opinion.",
+        "sentiment": "Positive"
+      },
+      {
+        "augmented": true,
+        "review": "Funny, heartwarming and perfectly paced. An instant favourite.",
+        "reasoning": "The reviewer uses positive adjectives such as \"funny\", \"heartwarming\", and \"instant favourite\" to describe the film, indicating a strong positive opinion. The tone of the review is also enthusiastic and suggests that the reviewer was thoroughly entertained.",
+        "sentiment": "Positive"
+      }
+    ],
+    "signature": {
+      "instructions": "Assess the sentiment of the text and classify it as positive, negative, or neutral while considering multiple contextual factors.",
+      "fields": [
+        {
+          "prefix": "Review:",
+          "description": "The text to analyze"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "The reasoning behind your assessment"
+        },
+        {
+          "prefix": ". With context",
+          "description": "Sentiment (You MUST output exactly one of: Positive, Negative, Mixed)"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

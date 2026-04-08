@@ -1,0 +1,489 @@
+{"nota_clinica": "Parte diario: Evolución satisfactoria. Diuresis conservada. Se retira sonda vesical sin complicaciones.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Deterioro neurológico. Glasgow 10/15. TAC de cráneo urgente solicitada. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Mejoría notable del estado general. Se suspende oxigenoterapia. Plan: alta médica mañana.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Evolución satisfactoria. Diuresis conservada. Se retira sonda vesical sin complicaciones. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Control post transfusión sin reacciones adversas. Hemoglobina de control pendiente.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente estable, compensado hemodinámicamente. TA 130/85, FC 68, afebril. Plan de alta. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Tolerancia oral progresiva sin incidentes. Deposiciones presentes. Abdomen no distendido.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Pte con disnea severa, SatO2 85% con máscara al 50%. Se evalúa pase a UTI.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Laboratorio de control con mejoria de leucocitos pero aparicion de plaquetopenia severa: 28.000/mm3. Se suspende heparina.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Herida quirúrgica con aspecto habitual para el día postoperatorio. Curación plana. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Insuficiencia renal aguda. Creatinina en ascenso: 3.8 mg/dL. Se evalúa diálisis. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Mejoría del cuadro de insuficiencia cardíaca. Peso en descenso. Diuresis adecuada.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Paciente estable, compensado hemodinámicamente. TA 130/85, FC 68, afebril. Plan de alta.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Paciente lúcido, orientado, colaborador. Herida operatoria en buenas condiciones. Drenaje escaso seroso. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Día 3 de antibioticoterapia. Sin picos febriles. Leucocitos sin cambios significativos. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Buena respuesta al tratamiento antibiótico. Leucocitos en descenso. Afebril hace 48hs.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Paciente pendiente de resultado de biopsia. Clínicamente sin cambios.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Trombosis venosa profunda confirmada por eco doppler. Se inicia anticoagulación. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Buena respuesta al tratamiento antibiótico. Leucocitos en descenso. Afebril hace 48hs. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Convulsión tónico-clónica generalizada. Se administra diazepam EV. Estudio neurológico urgente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Trombosis venosa profunda en tratamiento anticoagulante. Edema en regresion. Doppler de control con recanalizacion parcial.", "sentimiento": "positivo"}
+{"nota_clinica": "Glicemia estabilizada con esquema insulínico actual. HbA1c en rango objetivo.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Buena respuesta al tratamiento antibiótico. Leucocitos en descenso. Afebril hace 48hs. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Descompensación hemodinámica. TA 80/50, FC 120. Se inicia expansión con cristaloides. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Evolución: Broncoespasmo severo sin respuesta a broncodilatadores. Se indica corticoides EV. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Recuperación adecuada post anestesia. Reflejos conservados. Sin náuseas ni vómitos. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Eco abdominal sin hallazgos patológicos significativos. Se continúa evaluación clínica. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Paciente con confusión aguda y agitación psicomotriz. Descartar causa orgánica.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Evolución: Paciente con resolución completa del íleo. Tránsito intestinal restituido. Dieta progresiva. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Paciente deambula sin asistencia. Dolor controlado con analgesia habitual. Tolera dieta completa. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Laboratorio de control: hemoglobina estable, función renal conservada. Paciente asintomático.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Nota: Deterioro neurológico. Glasgow 10/15. TAC de cráneo urgente solicitada. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Pendiente TAC de abdomen para evaluar colección. Paciente clínicamente estable. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Rx tórax sin cambios respecto a previa. Se mantiene oxigenoterapia a 2L/min por cánula. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Pte afebril, SV estables. TA 120/80, FC 72, SatO2 98%. Buena tolerancia oral. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Mejora significativa del cuadro respiratorio. SatO2 96% sin oxígeno suplementario. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Glucemias en rango aceptable pero con episodios hipoglucemicos nocturnos repetidos. Requiere monitoreo continuo.", "sentimiento": "negativo"}
+{"nota_clinica": "Parte diario: Rehabilitación kinésica con buena respuesta. Amplitud de movimiento en mejoría. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Fiebre persistente a pesar de ATB de amplio espectro. Se rotan antibióticos y se solicitan nuevos cultivos. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Se realiza interconsulta con servicio de nutrición. Paciente con ingesta oral parcial. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Evolución: Paciente con dolor torácico de características isquémicas. ECG con cambios en ST. Se activa código infarto. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Hipotensión refractaria a fluidos. Lactato 5.2 mmol/L. Mal pronóstico. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Control post transfusión sin reacciones adversas. Hemoglobina de control pendiente. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Paciente asintomático cardiovascular. Ecocardiograma con fracción de eyección conservada. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Hiperglicemia corregida con protocolo de insulina. Glicemia capilar actual 130 mg/dL. Tolera dieta para diabetico.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Paciente deambula sin asistencia. Dolor controlado con analgesia habitual. Tolera dieta completa.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución: Shock séptico. Se inician vasopresores. Pase a unidad de cuidados intensivos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Celulitis periorbital con compromiso visual. Requiere drenaje quirúrgico urgente.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Paciente pendiente de resultado de biopsia. Clínicamente sin cambios. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Desaturacion transitoria durante la noche que resolvio espontaneamente. Actualmente SatO2 97% sin O2 suplementario.", "sentimiento": "positivo"}
+{"nota_clinica": "Mejoría clínica evidente. Glasgow 15/15. Sin déficit neurológico focal. Alta programada.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Mejoría clínica evidente. Glasgow 15/15. Sin déficit neurológico focal. Alta programada. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Buena respuesta al tratamiento antibiótico. Leucocitos en descenso. Afebril hace 48hs.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución: Empeoramiento radiológico. Rx tórax con nuevo infiltrado bilateral. Se sospecha SDRA.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Pte en cama, lúcido. Ingesta hídrica adecuada. Diuresis conservada. Sin novedades. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Fibrilación auricular con respuesta ventricular rápida. FC 150. Se indica amiodarona.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Deterioro neurológico. Glasgow 10/15. TAC de cráneo urgente solicitada.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Laboratorio de control: hemoglobina estable, función renal conservada. Paciente asintomático. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Paciente en plan de estudio. Se solicita resonancia magnética de columna lumbar.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Paciente lúcido, orientado, colaborador. Herida operatoria en buenas condiciones. Drenaje escaso seroso.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Sin novedades en la guardia. SV estables. Continúa con tratamiento indicado. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Eco abdominal sin hallazgos patológicos significativos. Se continúa evaluación clínica.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Estabilidad hemodinamica mantenida a expensas de alto volumen de resucitacion. Balance hidrico positivo 3L. Sobrecarga hidrica.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Paciente pendiente de resultado de biopsia. Clínicamente sin cambios.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Control cardiológico satisfactorio. ECG sin cambios isquémicos. Troponina en descenso.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Dolor controlado con opioides pero paciente somnoliento, Glasgow 12/15. Se reduce dosis y se evalua neurologicamente.", "sentimiento": "negativo"}
+{"nota_clinica": "Guardia: Cuadro de íleo paralítico. Abdomen distendido, timpánico. Se coloca SNG a caída libre. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Empeoramiento radiológico. Rx tórax con nuevo infiltrado bilateral. Se sospecha SDRA. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Continúa internado para completar tratamiento endovenoso. Sin complicaciones actuales. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente asintomático cardiovascular. Ecocardiograma con fracción de eyección conservada. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Buena evolución post parto. Útero contraído. Loquios normales. Lactancia efectiva. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Interconsulta con cardiología pendiente. Mientras tanto se mantiene monitoreo continuo.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Plan de alta suspendido por aparicion de fiebre 38.5 grados y escalofrios. Se toman hemocultivos de urgencia.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Continúa internado para completar tratamiento endovenoso. Sin complicaciones actuales. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Mejora significativa del cuadro respiratorio. SatO2 96% sin oxígeno suplementario.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Buena evolución post parto. Útero contraído. Loquios normales. Lactancia efectiva.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Paciente con dolor intermitente manejado con analgesia según necesidad. Resto sin particularidades. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Buena evolución del cuadro infeccioso. Hemocultivos negativos. Completa esquema ATB. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Sin novedades en la guardia. SV estables. Continúa con tratamiento indicado. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Trombosis venosa profunda confirmada por eco doppler. Se inicia anticoagulación. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Infección del sitio quirúrgico. Cultivo positivo para SAMR. Se ajusta ATB. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Respuesta favorable a la quimioterapia. Sin efectos adversos significativos. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Pte en buen estado general. Herida quirúrgica sin dehiscencia. Abdomen blando, indoloro. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente con buena evolución clínica. Afebril, hemodinámicamente estable. Tolera dieta oral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Parte diario: Fibrilación auricular con respuesta ventricular rápida. FC 150. Se indica amiodarona.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Se recibe resultado parcial de cultivo. Germen aún no tipificado. Se mantiene esquema.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente con antecedente de sangrado digestivo, actualmente sin evidencia de resangrado. Hb estable. En observacion.", "sentimiento": "neutro"}
+{"nota_clinica": "Parte diario: Fiebre persistente a pesar de ATB de amplio espectro. Se rotan antibióticos y se solicitan nuevos cultivos. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Hiperglicemia severa: 450 mg/dL. Cetonuria positiva. Se inicia protocolo de cetoacidosis. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Evolución satisfactoria de neumonía adquirida en la comunidad. Rx tórax con mejoría. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Control de laboratorio solicitado. Se ajusta hidratación parenteral. Sin cambios en el examen físico.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Leucocitosis leve sin foco clinico evidente. Paciente afebril. Se repite laboratorio en 24hs.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución: Excelente respuesta a inmunoterapia. Marcadores tumorales en descenso progresivo.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Complicación post quirúrgica: dehiscencia de sutura. Requiere reintervención.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Paciente lúcido, orientado, colaborador. Herida operatoria en buenas condiciones. Drenaje escaso seroso. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Excelente respuesta a inmunoterapia. Marcadores tumorales en descenso progresivo. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente con confusión aguda y agitación psicomotriz. Descartar causa orgánica.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Evolución estacionaria. Lesión cutánea sin cambios. Continúa con curaciones diarias. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Evolución favorable. Drenaje JP con débito mínimo seroso. Se retira hoy. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Reacción adversa a medicación. Rash cutáneo generalizado con compromiso de mucosas.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Se realiza interconsulta con servicio de nutrición. Paciente con ingesta oral parcial. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Control post transfusión sin reacciones adversas. Hemoglobina de control pendiente. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Pte en cama, lúcido. Ingesta hídrica adecuada. Diuresis conservada. Sin novedades. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Insuficiencia renal aguda. Creatinina en ascenso: 3.8 mg/dL. Se evalúa diálisis. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Buena evolución del cuadro infeccioso. Hemocultivos negativos. Completa esquema ATB. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Buena cicatrización de úlcera por presión. Tejido de granulación presente. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Rx tórax sin cambios respecto a previa. Se mantiene oxigenoterapia a 2L/min por cánula.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Paciente con vómitos incoercibles. Intolerancia oral completa. Se suspende dieta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Dehiscencia de anastomosis intestinal. Peritonitis difusa. Reintervención de urgencia. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Curaciones diarias con buen aspecto local pero fistula enterocutanea de alto debito. Requiere NPT.", "sentimiento": "negativo"}
+{"nota_clinica": "Broncoespasmo que respondio a nebulizaciones. Auscultacion con murmullo vesicular presente bilateral. SpO2 98%.", "sentimiento": "positivo"}
+{"nota_clinica": "Sin novedades en la guardia. SV estables. Continúa con tratamiento indicado.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Paciente sin requerimiento de oxígeno pero con actividad limitada. Kinesiología indicada.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Control post transfusión sin reacciones adversas. Hemoglobina de control pendiente.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Paciente con dolor intermitente manejado con analgesia según necesidad. Resto sin particularidades.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Buena tolerancia oral pero con glicemias oscilantes. Se ajusta esquema de insulina. Control en 12hs.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Pte en observación. TA 140/90, FC 80, T 36.8°C. Se aguardan estudios complementarios. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Creatinina estable en 1.8 mg/dL. No impresiona progresion de lesion renal. Se mantiene hidratacion EV.", "sentimiento": "neutro"}
+{"nota_clinica": "Nota: Paciente con dolor torácico de características isquémicas. ECG con cambios en ST. Se activa código infarto.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Paciente con deterioro del estado general. Febril 39.2°C, taquicárdico. Se escalan antibióticos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Pte en observación. TA 140/90, FC 80, T 36.8°C. Se aguardan estudios complementarios. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Pte en buen estado general. Herida quirúrgica sin dehiscencia. Abdomen blando, indoloro. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Dolor toracico evaluado. Troponinas seriadas negativas. ECG sin cambios isquemicos. Alta con seguimiento ambulatorio.", "sentimiento": "positivo"}
+{"nota_clinica": "Parte diario: Paciente con deterioro del estado general. Febril 39.2°C, taquicárdico. Se escalan antibióticos.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Fiebre persistente a pesar de ATB de amplio espectro. Se rotan antibióticos y se solicitan nuevos cultivos. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Mejoría del cuadro de insuficiencia cardíaca. Peso en descenso. Diuresis adecuada. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Respuesta favorable a la quimioterapia. Sin efectos adversos significativos. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Pte en buen estado general. Herida quirúrgica sin dehiscencia. Abdomen blando, indoloro.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Buena evolución del cuadro infeccioso. Hemocultivos negativos. Completa esquema ATB. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Evolución satisfactoria. Diuresis conservada. Se retira sonda vesical sin complicaciones. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Hiperglicemia severa: 450 mg/dL. Cetonuria positiva. Se inicia protocolo de cetoacidosis.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Eco abdominal sin hallazgos patológicos significativos. Se continúa evaluación clínica.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Pte afebril, SV estables. TA 120/80, FC 72, SatO2 98%. Buena tolerancia oral.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Paciente que deambulaba sin asistencia presenta caida con fractura de cadera. Requiere resolucion quirurgica.", "sentimiento": "negativo"}
+{"nota_clinica": "Neumonia con buena respuesta clinica al tercer dia de ATB. Curva termica en descenso. Rx con mejoria de infiltrado.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Hipotensión refractaria a fluidos. Lactato 5.2 mmol/L. Mal pronóstico.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Evolución estacionaria. Lesión cutánea sin cambios. Continúa con curaciones diarias.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Paciente con hematuria macroscópica post sondaje vesical. Se indica irrigación continua.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Reacción adversa a medicación. Rash cutáneo generalizado con compromiso de mucosas. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Evolución favorable post quirúrgica. Herida limpia sin signos de infección. Se planifica alta.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Broncoespasmo severo sin respuesta a broncodilatadores. Se indica corticoides EV. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente con vómitos incoercibles. Intolerancia oral completa. Se suspende dieta. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Nota: Paciente deambula sin asistencia. Dolor controlado con analgesia habitual. Tolera dieta completa. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Fiebre aislada de 37.8 grados que cedio espontaneamente. Sin repercusion hemodinamica. Se mantiene conducta expectante.", "sentimiento": "neutro"}
+{"nota_clinica": "Evaluación psiquiátrica realizada. Se sugiere seguimiento ambulatorio post alta.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Paciente en plan de estudio. Se solicita resonancia magnética de columna lumbar. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Control cardiológico satisfactorio. ECG sin cambios isquémicos. Troponina en descenso. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Cuadro de íleo paralítico. Abdomen distendido, timpánico. Se coloca SNG a caída libre. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Cetoacidosis diabetica resuelta. pH arterial normalizado: 7.38. Transicion a insulina subcutanea exitosa.", "sentimiento": "positivo"}
+{"nota_clinica": "Paciente con vómitos incoercibles. Intolerancia oral completa. Se suspende dieta. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Recuperación adecuada post anestesia. Reflejos conservados. Sin náuseas ni vómitos. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Fiebre persistente a pesar de ATB de amplio espectro. Se rotan antibióticos y se solicitan nuevos cultivos. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Mejoría clínica evidente. Glasgow 15/15. Sin déficit neurológico focal. Alta programada. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Mejoría notable del estado general. Se suspende oxigenoterapia. Plan: alta médica mañana.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Taquicardia sinusal leve FC 105. Probable secundaria a dolor. Sin repercusion hemodinamica. Se monitorea.", "sentimiento": "neutro"}
+{"nota_clinica": "Parte diario: Complicación post quirúrgica: dehiscencia de sutura. Requiere reintervención. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Buena evolución del cuadro infeccioso. Hemocultivos negativos. Completa esquema ATB. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Interconsulta con cardiología pendiente. Mientras tanto se mantiene monitoreo continuo.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Neumotórax post procedimiento. Se coloca tubo de drenaje pleural.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Paciente con deterioro del estado general. Febril 39.2°C, taquicárdico. Se escalan antibióticos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Crisis convulsiva que no se repitio tras ajuste de antiepilepticos. EEG sin actividad epileptiforme. Paciente asintomatico.", "sentimiento": "positivo"}
+{"nota_clinica": "Paciente que ingreso por shock septico, actualmente estable sin vasopresores. Buena diuresis espontanea.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Paciente con resolución completa del íleo. Tránsito intestinal restituido. Dieta progresiva. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Evolución postoperatoria sin complicaciones. Ruidos hidroaéreos presentes. Inicia tolerancia oral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Evolución: Dehiscencia de anastomosis intestinal. Peritonitis difusa. Reintervención de urgencia. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Desaturación nocturna recurrente. Se aumenta FiO2 y se solicita gasometría arterial. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Continúa internado para completar tratamiento endovenoso. Sin complicaciones actuales.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Paciente pendiente de resultado de biopsia. Clínicamente sin cambios.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Mejora significativa del cuadro respiratorio. SatO2 96% sin oxígeno suplementario. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Paciente sin requerimiento de oxígeno pero con actividad limitada. Kinesiología indicada. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Neumotórax post procedimiento. Se coloca tubo de drenaje pleural. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Buena tolerancia oral inicial que se interrumpe por vomitos biliosos. Abdomen distendido. Se coloca SNG.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Buena evolución post parto. Útero contraído. Loquios normales. Lactancia efectiva. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Control de laboratorio solicitado. Se ajusta hidratación parenteral. Sin cambios en el examen físico.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Pendiente resultado de hemocultivos. Se mantiene ATB empírico. Paciente afebril. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Paciente colaborador y orientado pero con caida brusca de saturacion a 82%. Requiere ARM. Pase a UTI.", "sentimiento": "negativo"}
+{"nota_clinica": "Guardia: Mejoría notable del estado general. Se suspende oxigenoterapia. Plan: alta médica mañana. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Dehiscencia de anastomosis intestinal. Peritonitis difusa. Reintervención de urgencia.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Mala evolución postoperatoria. Signos de infección de herida quirúrgica. Secreción purulenta.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Paciente con franca mejoría. Saturación 97% AA. Murmullo vesicular presente bilateral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Pendiente resultado de hemocultivos. Se mantiene ATB empírico. Paciente afebril.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Pendiente resultado de hemocultivos. Se mantiene ATB empírico. Paciente afebril. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Glicemia estabilizada con esquema insulínico actual. HbA1c en rango objetivo. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente con sangrado activo por drenaje. Hb 7.2 g/dL. Se indica transfusión urgente. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Trombosis venosa profunda confirmada por eco doppler. Se inicia anticoagulación.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Rx tórax sin cambios respecto a previa. Se mantiene oxigenoterapia a 2L/min por cánula.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Control hemodinamico estable con requerimiento creciente de vasopresores. Perfusion periferica comprometida.", "sentimiento": "negativo"}
+{"nota_clinica": "Parte diario: Evolución postoperatoria sin complicaciones. Ruidos hidroaéreos presentes. Inicia tolerancia oral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Evolución satisfactoria de neumonía adquirida en la comunidad. Rx tórax con mejoría. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Mala evolución postoperatoria. Signos de infección de herida quirúrgica. Secreción purulenta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Anemia leve Hb 10.1 g/dL. Asintomatica. No requiere transfusion por el momento. Control de laboratorio manana.", "sentimiento": "neutro"}
+{"nota_clinica": "Guardia: Pte en observación. TA 140/90, FC 80, T 36.8°C. Se aguardan estudios complementarios. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Paciente con tos productiva persistente pero afebril y con buena mecanica ventilatoria. Rx torax sin infiltrados nuevos.", "sentimiento": "neutro"}
+{"nota_clinica": "Guardia: Herida quirúrgica con aspecto habitual para el día postoperatorio. Curación plana.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Paciente con confusión aguda y agitación psicomotriz. Descartar causa orgánica. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Interconsulta con cardiología pendiente. Mientras tanto se mantiene monitoreo continuo.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente con franca mejoría. Saturación 97% AA. Murmullo vesicular presente bilateral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Tolerancia oral progresiva sin incidentes. Deposiciones presentes. Abdomen no distendido.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Nota: Complicación post quirúrgica: dehiscencia de sutura. Requiere reintervención.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Cuadro de íleo paralítico. Abdomen distendido, timpánico. Se coloca SNG a caída libre.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Paciente con buena evolución clínica. Afebril, hemodinámicamente estable. Tolera dieta oral. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Dolor toracico atipico en estudio. ECG sin cambios agudos. Troponina inicial negativa. Pendiente seriacion.", "sentimiento": "neutro"}
+{"nota_clinica": "Guardia: Mejora significativa del cuadro respiratorio. SatO2 96% sin oxígeno suplementario. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Rx tórax sin cambios respecto a previa. Se mantiene oxigenoterapia a 2L/min por cánula.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Derrame pleural en resolucion espontanea. Rx torax de control con mejoria significativa. Se evita drenaje.", "sentimiento": "positivo"}
+{"nota_clinica": "Dehiscencia parcial de herida en resolucion con curaciones. Tejido de granulacion presente. Evolucion favorable.", "sentimiento": "positivo"}
+{"nota_clinica": "Evolución: Evaluación psiquiátrica realizada. Se sugiere seguimiento ambulatorio post alta. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Paciente en plan de estudio. Se solicita resonancia magnética de columna lumbar. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Rehabilitación kinésica con buena respuesta. Amplitud de movimiento en mejoría. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Celulitis periorbital con compromiso visual. Requiere drenaje quirúrgico urgente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Paciente con deterioro del estado general. Febril 39.2°C, taquicárdico. Se escalan antibióticos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Se inicia esquema antibiotico empirico por sospecha de infeccion urinaria. Urocultivo pendiente de resultado.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución: Eco abdominal sin hallazgos patológicos significativos. Se continúa evaluación clínica.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Shock séptico. Se inician vasopresores. Pase a unidad de cuidados intensivos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Caída de cama durante la noche. Rx sin fracturas pero con hematoma en región frontal.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Anemia sintomatica corregida post transfusion. Hb control 10.2 g/dL. Asintomatica. Taquicardia resuelta.", "sentimiento": "positivo"}
+{"nota_clinica": "Ritmo sinusal recuperado transitoriamente pero recae en fibrilacion auricular con respuesta ventricular alta.", "sentimiento": "negativo"}
+{"nota_clinica": "Parte diario: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Descompensación hemodinámica. TA 80/50, FC 120. Se inicia expansión con cristaloides. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Paciente deambula sin asistencia. Dolor controlado con analgesia habitual. Tolera dieta completa.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Interconsulta con cardiología pendiente. Mientras tanto se mantiene monitoreo continuo. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Descompensación hemodinámica. TA 80/50, FC 120. Se inicia expansión con cristaloides. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Pte en observación. TA 140/90, FC 80, T 36.8°C. Se aguardan estudios complementarios. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Edema agudo de pulmon que respondio a diureticos EV. Rx con mejoria. Paciente eupneica en reposo.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Paciente con dolor torácico de características isquémicas. ECG con cambios en ST. Se activa código infarto. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Tolerancia oral progresiva sin incidentes. Deposiciones presentes. Abdomen no distendido. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Trombosis venosa profunda confirmada por eco doppler. Se inicia anticoagulación. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Shock séptico. Se inician vasopresores. Pase a unidad de cuidados intensivos.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Paciente con buena evolución clínica. Afebril, hemodinámicamente estable. Tolera dieta oral. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Fibrilación auricular con respuesta ventricular rápida. FC 150. Se indica amiodarona.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Pendiente TAC de abdomen para evaluar colección. Paciente clínicamente estable. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Evolución favorable post quirúrgica. Herida limpia sin signos de infección. Se planifica alta.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Interconsulta con cardiología pendiente. Mientras tanto se mantiene monitoreo continuo. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Hipotensión refractaria a fluidos. Lactato 5.2 mmol/L. Mal pronóstico. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Paciente con sangrado activo por drenaje. Hb 7.2 g/dL. Se indica transfusión urgente. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Paciente en espera de turno quirúrgico. Ayuno desde las 00hs. Sin eventos durante la noche.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Eco abdominal sin hallazgos patológicos significativos. Se continúa evaluación clínica.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Infección del sitio quirúrgico. Cultivo positivo para SAMR. Se ajusta ATB. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Laboratorio de control: hemoglobina estable, función renal conservada. Paciente asintomático. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Infección del sitio quirúrgico. Cultivo positivo para SAMR. Se ajusta ATB. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Buena cicatrización de úlcera por presión. Tejido de granulación presente. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Dehiscencia de anastomosis intestinal. Peritonitis difusa. Reintervención de urgencia.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Shock séptico. Se inician vasopresores. Pase a unidad de cuidados intensivos. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Broncoespasmo severo sin respuesta a broncodilatadores. Se indica corticoides EV. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Día 3 de antibioticoterapia. Sin picos febriles. Leucocitos sin cambios significativos. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Caída de cama durante la noche. Rx sin fracturas pero con hematoma en región frontal.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Control cardiológico satisfactorio. ECG sin cambios isquémicos. Troponina en descenso. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Shock séptico. Se inician vasopresores. Pase a unidad de cuidados intensivos. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Dolor postoperatorio controlado con analgesia oral. Herida sin signos de infeccion. Deambula con asistencia.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Paciente con dolor intermitente manejado con analgesia según necesidad. Resto sin particularidades. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Complicación post quirúrgica: dehiscencia de sutura. Requiere reintervención.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Complicación post quirúrgica: dehiscencia de sutura. Requiere reintervención.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Evolución estacionaria. Lesión cutánea sin cambios. Continúa con curaciones diarias. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Control de laboratorio solicitado. Se ajusta hidratación parenteral. Sin cambios en el examen físico. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Ileo postoperatorio resuelto. Ruidos hidroaereos presentes. Elimino gases. Inicia dieta liquida.", "sentimiento": "positivo"}
+{"nota_clinica": "Afebril pero con taquicardia persistente FC 120 y caida de Hb de 11 a 8.5 g/dL. Se sospecha sangrado oculto.", "sentimiento": "negativo"}
+{"nota_clinica": "Guardia: Glicemia estabilizada con esquema insulínico actual. HbA1c en rango objetivo.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Evolución postoperatoria sin complicaciones. Ruidos hidroaéreos presentes. Inicia tolerancia oral.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Pte con disnea severa, SatO2 85% con máscara al 50%. Se evalúa pase a UTI. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Control de laboratorio solicitado. Se ajusta hidratación parenteral. Sin cambios en el examen físico.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Se solicita evaluación por terapia ocupacional. Paciente con limitación funcional leve. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Mejoría del cuadro de insuficiencia cardíaca. Peso en descenso. Diuresis adecuada.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Buena cicatrización de úlcera por presión. Tejido de granulación presente.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Evaluación psiquiátrica realizada. Se sugiere seguimiento ambulatorio post alta. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Paciente con vómitos incoercibles. Intolerancia oral completa. Se suspende dieta. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Paciente con sangrado activo por drenaje. Hb 7.2 g/dL. Se indica transfusión urgente.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Evolución favorable. Drenaje JP con débito mínimo seroso. Se retira hoy.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Parte diario: Paciente en anasarca. Falla multiorgánica progresiva. Se convoca a familia. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Pte en observación. TA 140/90, FC 80, T 36.8°C. Se aguardan estudios complementarios. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Pendiente resultado de hemocultivos. Se mantiene ATB empírico. Paciente afebril. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Pte afebril, SV estables. TA 120/80, FC 72, SatO2 98%. Buena tolerancia oral.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Se recibe resultado parcial de cultivo. Germen aún no tipificado. Se mantiene esquema.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Tolerancia oral progresiva sin incidentes. Deposiciones presentes. Abdomen no distendido.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Paciente con dolor torácico de características isquémicas. ECG con cambios en ST. Se activa código infarto. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Evolución satisfactoria. Diuresis conservada. Se retira sonda vesical sin complicaciones.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Pte en cama, lúcido. Ingesta hídrica adecuada. Diuresis conservada. Sin novedades. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Glicemia estabilizada con esquema insulínico actual. HbA1c en rango objetivo. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Mejoría notable del estado general. Se suspende oxigenoterapia. Plan: alta médica mañana. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Control de laboratorio solicitado. Se ajusta hidratación parenteral. Sin cambios en el examen físico. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Pte con disnea severa, SatO2 85% con máscara al 50%. Se evalúa pase a UTI. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Paciente en anasarca. Falla multiorgánica progresiva. Se convoca a familia. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Vomitos controlados con antiemeticos. Reinicia tolerancia oral progresiva. Sin nuevos episodios en 24hs.", "sentimiento": "positivo"}
+{"nota_clinica": "Excelente respuesta a inmunoterapia. Marcadores tumorales en descenso progresivo.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Se recibe resultado parcial de cultivo. Germen aún no tipificado. Se mantiene esquema. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Buena cicatrización de úlcera por presión. Tejido de granulación presente.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Evaluación psiquiátrica realizada. Se sugiere seguimiento ambulatorio post alta.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Desaturación nocturna recurrente. Se aumenta FiO2 y se solicita gasometría arterial.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Caída de cama durante la noche. Rx sin fracturas pero con hematoma en región frontal. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Día 3 de antibioticoterapia. Sin picos febriles. Leucocitos sin cambios significativos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Recuperación adecuada post anestesia. Reflejos conservados. Sin náuseas ni vómitos. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Drenaje con debito seroso escaso 30cc/24hs. Sin criterio de retiro aun. Se mantiene control diario.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución: Hiperglicemia severa: 450 mg/dL. Cetonuria positiva. Se inicia protocolo de cetoacidosis. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Se ajusta dosis de insulina por glicemias en rango alto-normal. Control en 24hs. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Evolución estacionaria. Lesión cutánea sin cambios. Continúa con curaciones diarias. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Herida quirúrgica con aspecto habitual para el día postoperatorio. Curación plana.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Paciente lúcido, orientado, colaborador. Herida operatoria en buenas condiciones. Drenaje escaso seroso.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Recuperación adecuada post anestesia. Reflejos conservados. Sin náuseas ni vómitos.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Evolución favorable. Drenaje JP con débito mínimo seroso. Se retira hoy. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Dehiscencia de anastomosis intestinal. Peritonitis difusa. Reintervención de urgencia. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Caída de cama durante la noche. Rx sin fracturas pero con hematoma en región frontal.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Empeoramiento radiológico. Rx tórax con nuevo infiltrado bilateral. Se sospecha SDRA. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Tolerancia oral parcial pero con deposiciones con sangre. Rectosigmoideoscopia urgente solicitada.", "sentimiento": "negativo"}
+{"nota_clinica": "Evolución: Celulitis periorbital con compromiso visual. Requiere drenaje quirúrgico urgente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Descompensación hemodinámica. TA 80/50, FC 120. Se inicia expansión con cristaloides. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Broncoespasmo severo sin respuesta a broncodilatadores. Se indica corticoides EV. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Paciente con sangrado activo por drenaje. Hb 7.2 g/dL. Se indica transfusión urgente. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Paciente asintomático cardiovascular. Ecocardiograma con fracción de eyección conservada.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Evolución favorable post quirúrgica. Herida limpia sin signos de infección. Se planifica alta. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Empeoramiento radiológico. Rx tórax con nuevo infiltrado bilateral. Se sospecha SDRA. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Paciente estable, compensado hemodinámicamente. TA 130/85, FC 68, afebril. Plan de alta. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Paciente en anasarca. Falla multiorgánica progresiva. Se convoca a familia.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Evolución favorable. Drenaje JP con débito mínimo seroso. Se retira hoy. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Laboratorio de control: hemoglobina estable, función renal conservada. Paciente asintomático. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Fiebre resuelta tras 72hs de antibioticoterapia. Hemocultivos negativos. Leucocitos en descenso. Plan de alta.", "sentimiento": "positivo"}
+{"nota_clinica": "Paciente en ARM con parametros estables. Sin cambios ventilatorios. Sedacion minima. Prueba de ventilacion espontanea pendiente.", "sentimiento": "neutro"}
+{"nota_clinica": "Herida operatoria de aspecto limpio sin embargo cultivo de secrecion positivo para SAMR. Se rota esquema ATB.", "sentimiento": "negativo"}
+{"nota_clinica": "Parte diario: Convulsión tónico-clónica generalizada. Se administra diazepam EV. Estudio neurológico urgente. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Sangrado digestivo alto autolimitado. Hb estable en controles seriados. Tolera dieta liquida sin incidentes.", "sentimiento": "positivo"}
+{"nota_clinica": "Evolución: Neumotórax post procedimiento. Se coloca tubo de drenaje pleural. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Paciente con confusión aguda y agitación psicomotriz. Descartar causa orgánica. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Se realiza interconsulta con servicio de nutrición. Paciente con ingesta oral parcial. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Laboratorio de control: hemoglobina estable, función renal conservada. Paciente asintomático. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Convulsión tónico-clónica generalizada. Se administra diazepam EV. Estudio neurológico urgente. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Parte diario: Se recibe resultado parcial de cultivo. Germen aún no tipificado. Se mantiene esquema. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Rehabilitación kinésica con buena respuesta. Amplitud de movimiento en mejoría. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Parte diario: Reacción adversa a medicación. Rash cutáneo generalizado con compromiso de mucosas. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Paciente con dolor intermitente manejado con analgesia según necesidad. Resto sin particularidades. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Se ajusta dosis de insulina por glicemias en rango alto-normal. Control en 24hs.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Pte con disnea severa, SatO2 85% con máscara al 50%. Se evalúa pase a UTI. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Se retira drenaje con debito serohematico que aumenta a 300cc en 6hs. Se recoloca drenaje. Evaluar reintervencion.", "sentimiento": "negativo"}
+{"nota_clinica": "Evolucion aparentemente favorable pero laboratorio muestra leucocitosis en ascenso y PCR elevada. Posible foco oculto.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Convulsión tónico-clónica generalizada. Se administra diazepam EV. Estudio neurológico urgente. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Mejoría clínica evidente. Glasgow 15/15. Sin déficit neurológico focal. Alta programada. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Neumotórax post procedimiento. Se coloca tubo de drenaje pleural.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Insuficiencia renal aguda. Creatinina en ascenso: 3.8 mg/dL. Se evalúa diálisis.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Nota: Control cardiológico satisfactorio. ECG sin cambios isquémicos. Troponina en descenso. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Caída de cama durante la noche. Rx sin fracturas pero con hematoma en región frontal.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Paciente en espera de turno quirúrgico. Ayuno desde las 00hs. Sin eventos durante la noche. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Paciente con franca mejoría. Saturación 97% AA. Murmullo vesicular presente bilateral. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Se recibe resultado parcial de cultivo. Germen aún no tipificado. Se mantiene esquema. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Paciente en anasarca. Falla multiorgánica progresiva. Se convoca a familia. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Evolución: Cuadro de íleo paralítico. Abdomen distendido, timpánico. Se coloca SNG a caída libre. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Paciente con sangrado activo por drenaje. Hb 7.2 g/dL. Se indica transfusión urgente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución favorable. Drenaje JP con débito mínimo seroso. Se retira hoy. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Reacción adversa a medicación. Rash cutáneo generalizado con compromiso de mucosas. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución: Evolución satisfactoria de neumonía adquirida en la comunidad. Rx tórax con mejoría. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente en anasarca. Falla multiorgánica progresiva. Se convoca a familia. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Estado general conservado pero aparicion de rash generalizado compatible con reaccion adversa medicamentosa.", "sentimiento": "negativo"}
+{"nota_clinica": "Control cardiológico satisfactorio. ECG sin cambios isquémicos. Troponina en descenso. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Confusion leve vespertina que resuelve espontaneamente. Se descarta causa metabolica. Probable sundowning.", "sentimiento": "neutro"}
+{"nota_clinica": "Arritmia revertida farmacologicamente. Ritmo sinusal en ECG de control. FC 72 lpm. Estable.", "sentimiento": "positivo"}
+{"nota_clinica": "Evolución: Paciente asintomático cardiovascular. Ecocardiograma con fracción de eyección conservada.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Se ajusta dosis de insulina por glicemias en rango alto-normal. Control en 24hs.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Reacción adversa a medicación. Rash cutáneo generalizado con compromiso de mucosas. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Nota: Rehabilitación kinésica con buena respuesta. Amplitud de movimiento en mejoría. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Paciente estable, compensado hemodinámicamente. TA 130/85, FC 68, afebril. Plan de alta. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Guardia: Sin novedades en la guardia. SV estables. Continúa con tratamiento indicado. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Mejoria subjetiva del estado general pero TAC de control muestra progresion de imagen pulmonar bilateral.", "sentimiento": "negativo"}
+{"nota_clinica": "Nota: Excelente respuesta a inmunoterapia. Marcadores tumorales en descenso progresivo. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Pte en cama, lúcido. Ingesta hídrica adecuada. Diuresis conservada. Sin novedades.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Glicemia estabilizada con esquema insulínico actual. HbA1c en rango objetivo. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Pte en cama, lúcido. Ingesta hídrica adecuada. Diuresis conservada. Sin novedades.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Nota: Desaturación nocturna recurrente. Se aumenta FiO2 y se solicita gasometría arterial. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Mejoría del cuadro de insuficiencia cardíaca. Peso en descenso. Diuresis adecuada.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Pte afebril, SV estables. TA 120/80, FC 72, SatO2 98%. Buena tolerancia oral.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Herida quirurgica con eritema periincisional leve. Sin secrecion purulenta. Se intensifican curaciones.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución: Paciente con hematuria macroscópica post sondaje vesical. Se indica irrigación continua.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Se realiza interconsulta con servicio de nutrición. Paciente con ingesta oral parcial. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Paciente con franca mejoría. Saturación 97% AA. Murmullo vesicular presente bilateral.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Guardia: Broncoespasmo severo sin respuesta a broncodilatadores. Se indica corticoides EV. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Edema de miembros inferiores sin cambios con respecto al ingreso. Se solicita eco doppler venoso.", "sentimiento": "neutro"}
+{"nota_clinica": "Paciente con hematuria macroscópica post sondaje vesical. Se indica irrigación continua. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Paciente con franca mejoría. Saturación 97% AA. Murmullo vesicular presente bilateral. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Herida operatoria con borde eritematoso que requiere seguimiento. No impresiona celulitis. Curacion diaria.", "sentimiento": "neutro"}
+{"nota_clinica": "Mala evolución postoperatoria. Signos de infección de herida quirúrgica. Secreción purulenta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Se solicita evaluación por terapia ocupacional. Paciente con limitación funcional leve. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Se solicita evaluación por terapia ocupacional. Paciente con limitación funcional leve. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Hipotensión refractaria a fluidos. Lactato 5.2 mmol/L. Mal pronóstico. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Cultivo de herida con desarrollo de flora polimicrobiana. Sensibilidad pendiente. Se mantiene esquema ATB actual.", "sentimiento": "neutro"}
+{"nota_clinica": "Confusion que cedio tras correccion hidroelectrolitica. Paciente lucido, orientado. Glasgow 15/15.", "sentimiento": "positivo"}
+{"nota_clinica": "Nota: Fibrilación auricular con respuesta ventricular rápida. FC 150. Se indica amiodarona. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución favorable post quirúrgica. Herida limpia sin signos de infección. Se planifica alta. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Celulitis periorbital con compromiso visual. Requiere drenaje quirúrgico urgente.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Tolerancia oral progresiva sin incidentes. Deposiciones presentes. Abdomen no distendido. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Paciente pendiente de resultado de biopsia. Clínicamente sin cambios.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Evolución postoperatoria sin complicaciones. Ruidos hidroaéreos presentes. Inicia tolerancia oral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Evolución: Paciente con deterioro del estado general. Febril 39.2°C, taquicárdico. Se escalan antibióticos.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Post transfusion: Hb subio a 9.8 pero presenta reaccion febril no hemolitica. Se suspende transfusion.", "sentimiento": "negativo"}
+{"nota_clinica": "Paciente en plan de estudio. Se solicita resonancia magnética de columna lumbar.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Parte diario: Deterioro neurológico. Glasgow 10/15. TAC de cráneo urgente solicitada.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Se realiza interconsulta con servicio de nutrición. Paciente con ingesta oral parcial.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Buena respuesta al tratamiento antibiótico. Leucocitos en descenso. Afebril hace 48hs. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Paciente asintomático cardiovascular. Ecocardiograma con fracción de eyección conservada. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Herida quirúrgica con aspecto habitual para el día postoperatorio. Curación plana.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Evolución: Paciente estable, sin cambios significativos respecto al día previo. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Celulitis periorbital con compromiso visual. Requiere drenaje quirúrgico urgente. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Recuperación adecuada post anestesia. Reflejos conservados. Sin náuseas ni vómitos. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Laboratorio"}
+{"nota_clinica": "Paciente lucido y estable hemodinamicamente pero con deterioro progresivo de funcion renal. Creatinina 4.2 mg/dL.", "sentimiento": "negativo"}
+{"nota_clinica": "Paciente con antecedente de caida que presento evolucion favorable. TAC sin lesiones agudas. Deambula sin dificultad.", "sentimiento": "positivo"}
+{"nota_clinica": "Parte diario: Pendiente resultado de hemocultivos. Se mantiene ATB empírico. Paciente afebril.", "sentimiento": "neutro", "topico": "Laboratorio"}
+{"nota_clinica": "Dolor abdominal leve intermitente que no requiere rescate analgesico. Pendiente ecografia de control.", "sentimiento": "neutro"}
+{"nota_clinica": "Insuficiencia respiratoria en resolucion. Se reduce FiO2 progresivamente. SatO2 96% aire ambiente.", "sentimiento": "positivo"}
+{"nota_clinica": "Guardia: Paciente lúcido, orientado, colaborador. Herida operatoria en buenas condiciones. Drenaje escaso seroso. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Respuesta favorable a la quimioterapia. Sin efectos adversos significativos. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Paciente sin requerimiento de oxígeno pero con actividad limitada. Kinesiología indicada.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Se ajusta dosis de insulina por glicemias en rango alto-normal. Control en 24hs.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Paciente deambula sin asistencia. Dolor controlado con analgesia habitual. Tolera dieta completa. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Trombosis venosa profunda confirmada por eco doppler. Se inicia anticoagulación.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Parte diario: Evolución satisfactoria de neumonía adquirida en la comunidad. Rx tórax con mejoría.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Pendiente TAC de abdomen para evaluar colección. Paciente clínicamente estable. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Fibrilación auricular con respuesta ventricular rápida. FC 150. Se indica amiodarona.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución: Paciente en espera de turno quirúrgico. Ayuno desde las 00hs. Sin eventos durante la noche. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Paciente con vómitos incoercibles. Intolerancia oral completa. Se suspende dieta. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Estado funcional"}
+{"nota_clinica": "Nota: Fiebre persistente a pesar de ATB de amplio espectro. Se rotan antibióticos y se solicitan nuevos cultivos. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Insuficiencia renal aguda. Creatinina en ascenso: 3.8 mg/dL. Se evalúa diálisis. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Buena evolución post parto. Útero contraído. Loquios normales. Lactancia efectiva. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución satisfactoria. Diuresis conservada. Se retira sonda vesical sin complicaciones. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Mejoría clínica evidente. Glasgow 15/15. Sin déficit neurológico focal. Alta programada.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Se solicita evaluación por terapia ocupacional. Paciente con limitación funcional leve. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Continúa internado para completar tratamiento endovenoso. Sin complicaciones actuales. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Herida quirúrgica con aspecto habitual para el día postoperatorio. Curación plana. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Día 3 de antibioticoterapia. Sin picos febriles. Leucocitos sin cambios significativos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Parte diario: Paciente con buena evolución clínica. Afebril, hemodinámicamente estable. Tolera dieta oral. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Guardia: Respuesta favorable a la quimioterapia. Sin efectos adversos significativos.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Evolución: Evolución estacionaria. Lesión cutánea sin cambios. Continúa con curaciones diarias. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Paciente con hematuria macroscópica post sondaje vesical. Se indica irrigación continua. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Infección del sitio quirúrgico. Cultivo positivo para SAMR. Se ajusta ATB. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Infeccion de sitio quirurgico superficial tratada con curaciones y ATB oral. Bordes de herida limpios. Buena evolucion.", "sentimiento": "positivo"}
+{"nota_clinica": "Nota: Evaluación psiquiátrica realizada. Se sugiere seguimiento ambulatorio post alta. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Paciente en plan de estudio. Se solicita resonancia magnética de columna lumbar.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Respuesta favorable a la quimioterapia. Sin efectos adversos significativos. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Desaturacion transitoria a 91% durante el sueno. Se recupera espontaneamente. Se solicita oximetria nocturna.", "sentimiento": "neutro"}
+{"nota_clinica": "Paciente con disnea de esfuerzo clase funcional II. Rx torax sin cambios respecto al previo. Espera evaluacion cardiologica.", "sentimiento": "neutro"}
+{"nota_clinica": "Evolución postoperatoria sin complicaciones. Ruidos hidroaéreos presentes. Inicia tolerancia oral. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Excelente respuesta a inmunoterapia. Marcadores tumorales en descenso progresivo. Sin otros hallazgos.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Pte afebril, SV estables. TA 120/80, FC 72, SatO2 98%. Buena tolerancia oral.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Paciente en espera de turno quirúrgico. Ayuno desde las 00hs. Sin eventos durante la noche. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Diuresis conservada pero con sodio serico en descenso: 126 mEq/L. Se restringe aporte hidrico. Riesgo de hiponatremia severa.", "sentimiento": "negativo"}
+{"nota_clinica": "Parte diario: Paciente con hematuria macroscópica post sondaje vesical. Se indica irrigación continua.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Paciente refiere mejoria del dolor pero persiste limitacion funcional. Pendiente evaluacion por kinesiologia.", "sentimiento": "neutro"}
+{"nota_clinica": "Buena cicatrización de úlcera por presión. Tejido de granulación presente. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Pendiente TAC de abdomen para evaluar colección. Paciente clínicamente estable.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Guardia: Continúa internado para completar tratamiento endovenoso. Sin complicaciones actuales. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Hiperglicemia severa: 450 mg/dL. Cetonuria positiva. Se inicia protocolo de cetoacidosis. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Medicación"}
+{"nota_clinica": "Parte diario: Desaturación nocturna recurrente. Se aumenta FiO2 y se solicita gasometría arterial. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Paciente deambula pero refiere disnea creciente a minimos esfuerzos. SatO2 89% post deambulacion. Se reevalua.", "sentimiento": "negativo"}
+{"nota_clinica": "Guardia: Pte con disnea severa, SatO2 85% con máscara al 50%. Se evalúa pase a UTI.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Parte diario: Paciente con resolución completa del íleo. Tránsito intestinal restituido. Dieta progresiva.", "sentimiento": "positivo", "topico": "Evolución general"}
+{"nota_clinica": "Nota: Sin novedades en la guardia. SV estables. Continúa con tratamiento indicado.", "sentimiento": "neutro", "topico": "Postoperatorio"}
+{"nota_clinica": "Guardia: Pendiente TAC de abdomen para evaluar colección. Paciente clínicamente estable. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Paciente en espera de turno quirúrgico. Ayuno desde las 00hs. Sin eventos durante la noche.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Buena evolución del cuadro infeccioso. Hemocultivos negativos. Completa esquema ATB.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Evolucion clinica sin cambios. Hemocultivos pendientes de resultado. Se mantiene esquema ATB empirico.", "sentimiento": "neutro"}
+{"nota_clinica": "Neumotórax post procedimiento. Se coloca tubo de drenaje pleural.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Guardia: Mala evolución postoperatoria. Signos de infección de herida quirúrgica. Secreción purulenta. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Evolución: Deterioro neurológico. Glasgow 10/15. TAC de cráneo urgente solicitada. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Empeoramiento radiológico. Rx tórax con nuevo infiltrado bilateral. Se sospecha SDRA.", "sentimiento": "negativo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Mejoría notable del estado general. Se suspende oxigenoterapia. Plan: alta médica mañana. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Paciente con confusión aguda y agitación psicomotriz. Descartar causa orgánica.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Nota: Evolución favorable post quirúrgica. Herida limpia sin signos de infección. Se planifica alta. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Rehabilitación kinésica con buena respuesta. Amplitud de movimiento en mejoría.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Descompensación hemodinámica. TA 80/50, FC 120. Se inicia expansión con cristaloides.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Mejora significativa del cuadro respiratorio. SatO2 96% sin oxígeno suplementario. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Paciente con dolor torácico de características isquémicas. ECG con cambios en ST. Se activa código infarto. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución: Buena evolución post parto. Útero contraído. Loquios normales. Lactancia efectiva.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Parte diario: Pte en buen estado general. Herida quirúrgica sin dehiscencia. Abdomen blando, indoloro. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Signos vitales"}
+{"nota_clinica": "Nota: Se solicita evaluación por terapia ocupacional. Paciente con limitación funcional leve.", "sentimiento": "neutro", "topico": "Signos vitales"}
+{"nota_clinica": "Parte diario: Paciente estable, compensado hemodinámicamente. TA 130/85, FC 68, afebril. Plan de alta.", "sentimiento": "positivo", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Cuadro de íleo paralítico. Abdomen distendido, timpánico. Se coloca SNG a caída libre. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Procedimientos"}
+{"nota_clinica": "Nota: Hiperglicemia severa: 450 mg/dL. Cetonuria positiva. Se inicia protocolo de cetoacidosis. Se mantiene conducta.", "sentimiento": "negativo", "topico": "Laboratorio"}
+{"nota_clinica": "Herida quirurgica sin dehiscencia macroscopica pero ecografia muestra coleccion subfascial de 5cm. Evaluar drenaje.", "sentimiento": "negativo"}
+{"nota_clinica": "Post procedimiento sin complicaciones inmediatas. Se indica reposo relativo y control clinico en 6hs.", "sentimiento": "neutro"}
+{"nota_clinica": "Nota: Paciente con resolución completa del íleo. Tránsito intestinal restituido. Dieta progresiva.", "sentimiento": "positivo", "topico": "Infecciones"}
+{"nota_clinica": "Guardia: Control post transfusión sin reacciones adversas. Hemoglobina de control pendiente. Se mantiene conducta.", "sentimiento": "neutro", "topico": "Estado funcional"}
+{"nota_clinica": "Paciente con resolución completa del íleo. Tránsito intestinal restituido. Dieta progresiva.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Insuficiencia renal aguda. Creatinina en ascenso: 3.8 mg/dL. Se evalúa diálisis. Sin otros hallazgos.", "sentimiento": "negativo", "topico": "Evolución general"}
+{"nota_clinica": "Evolución satisfactoria de neumonía adquirida en la comunidad. Rx tórax con mejoría. Se mantiene conducta.", "sentimiento": "positivo", "topico": "Postoperatorio"}
+{"nota_clinica": "Hipotensión refractaria a fluidos. Lactato 5.2 mmol/L. Mal pronóstico.", "sentimiento": "negativo", "topico": "Postoperatorio"}
+{"nota_clinica": "Paciente con buena evolución clínica. Afebril, hemodinámicamente estable. Tolera dieta oral.", "sentimiento": "positivo", "topico": "Medicación"}
+{"nota_clinica": "Evolución: Convulsión tónico-clónica generalizada. Se administra diazepam EV. Estudio neurológico urgente. Control en turno siguiente.", "sentimiento": "negativo", "topico": "Infecciones"}
+{"nota_clinica": "Nota: Día 3 de antibioticoterapia. Sin picos febriles. Leucocitos sin cambios significativos. Sin otros hallazgos.", "sentimiento": "neutro", "topico": "Procedimientos"}
+{"nota_clinica": "Guardia: Pte en buen estado general. Herida quirúrgica sin dehiscencia. Abdomen blando, indoloro. Control en turno siguiente.", "sentimiento": "positivo", "topico": "Estado funcional"}
+{"nota_clinica": "Rx tórax sin cambios respecto a previa. Se mantiene oxigenoterapia a 2L/min por cánula. Control en turno siguiente.", "sentimiento": "neutro", "topico": "Medicación"}
