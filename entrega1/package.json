@@ -6,9 +6,9 @@
   "scripts": {
     "start": "tsx src/ejemplo/word2vec/index.ts",
     "start:nn": "tsx src/ejemplo/neural-network/index.ts",
-    "start:llm:01": "tsx src/entrega/01-primera-llamada.ts",
-    "start:llm:02": "tsx src/entrega/02-hiperparametros.ts",
-    "start:llm:03": "tsx src/entrega/03-prompt-engineering.ts",
+    "start:llm:01": "node --experimental-strip-types src/entrega/01-primera-llamada.ts",
+    "start:llm:02": "node --experimental-strip-types src/entrega/02-hiperparametros.ts",
+    "start:llm:03": "node --experimental-strip-types src/entrega/03-prompt-engineering.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
