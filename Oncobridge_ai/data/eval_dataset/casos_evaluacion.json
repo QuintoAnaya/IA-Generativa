@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "descripcion": "Dataset de evaluacion de OncoBridge AI. 18 casos clinicos sinteticos con ground truth (etiqueta esperada) para medir el sistema end-to-end.",
+    "nota": "Casos sinteticos con fines academicos. NO son pacientes reales.",
+    "campos": {
+      "requiere_imagen_esperado": "ground truth: si el caso deberia derivarse a imagen",
+      "tipo_cancer_esperado": "diagnostico oncologico esperado (o 'ninguno' para negativos)",
+      "urgencia_esperada": "triage esperado"
+    }
+  },
+  "casos": [
+    {
+      "caso_id": "C01", "tipo": "positivo",
+      "paciente": {"paciente_id":"P01","edad":64,"sexo":"M","motivo_consulta":"tos con sangre","historia_clinica":"fumador 40 paquetes-ano, EPOC","sintomas_actuales":["tos persistente","hemoptisis","disnea progresiva","perdida de peso"],"factores_riesgo":["tabaquismo"],"biomarcadores":{"CEA":"elevado"}},
+      "estudio": {"estudio_id":"E01","modalidad":"TC de torax","region_anatomica":"torax","hallazgos_estructurados":["nodulo espiculado en lobulo superior","linfadenopatia mediastinal"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de pulmon (no microcitico)","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C02", "tipo": "positivo",
+      "paciente": {"paciente_id":"P02","edad":55,"sexo":"F","motivo_consulta":"nodulo en la mama","historia_clinica":"antecedente familiar de cancer de mama, mutacion BRCA1","sintomas_actuales":["nodulo mamario palpable","retraccion del pezon","adenopatia axilar"],"factores_riesgo":["mutacion BRCA","edad"],"biomarcadores":{"HER2":"positivo"}},
+      "estudio": {"estudio_id":"E02","modalidad":"Mamografia","region_anatomica":"mama","hallazgos_estructurados":["masa espiculada con microcalcificaciones","adenopatia axilar"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de mama","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C03", "tipo": "positivo",
+      "paciente": {"paciente_id":"P03","edad":68,"sexo":"M","motivo_consulta":"sangrado rectal y anemia","historia_clinica":"antecedente familiar, dieta rica en carnes rojas","sintomas_actuales":["sangrado rectal","cambio en habito intestinal","anemia ferropenica","perdida de peso"],"factores_riesgo":["edad","antecedente familiar"],"biomarcadores":{"CEA":"elevado"}},
+      "estudio": {"estudio_id":"E03","modalidad":"TC de abdomen","region_anatomica":"abdomen","hallazgos_estructurados":["engrosamiento parietal con estenosis","adenopatias mesentericas"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer colorrectal","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C04", "tipo": "positivo",
+      "paciente": {"paciente_id":"P04","edad":70,"sexo":"M","motivo_consulta":"sintomas urinarios","historia_clinica":"PSA elevado en control","sintomas_actuales":["sintomas urinarios obstructivos","nocturia"],"factores_riesgo":["edad","raza afroamericana"],"biomarcadores":{"PSA":"8.5"}},
+      "estudio": {"estudio_id":"E04","modalidad":"RM multiparametrica de prostata","region_anatomica":"prostata","hallazgos_estructurados":["lesion focal en zona periferica","restriccion en difusion"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de prostata","urgencia_esperada":"media"}
+    },
+    {
+      "caso_id": "C05", "tipo": "positivo",
+      "paciente": {"paciente_id":"P05","edad":45,"sexo":"F","motivo_consulta":"lunar que cambio","historia_clinica":"multiples quemaduras solares, piel clara","sintomas_actuales":["lesion pigmentada asimetrica","bordes irregulares","cambio de color"],"factores_riesgo":["exposicion solar","piel clara"],"biomarcadores":{"LDH":"elevada"}},
+      "estudio": {"estudio_id":"E05","modalidad":"PET-TC","region_anatomica":"cuerpo entero","hallazgos_estructurados":["adenopatias regionales","lesion en transito"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Melanoma","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C06", "tipo": "positivo",
+      "paciente": {"paciente_id":"P06","edad":66,"sexo":"M","motivo_consulta":"ictericia y perdida de peso","historia_clinica":"tabaquismo, diabetes de reciente aparicion","sintomas_actuales":["ictericia indolora","dolor epigastrico irradiado a espalda","perdida de peso marcada"],"factores_riesgo":["tabaquismo","diabetes"],"biomarcadores":{"CA 19-9":"elevado"}},
+      "estudio": {"estudio_id":"E06","modalidad":"TC de abdomen protocolo pancreatico","region_anatomica":"abdomen","hallazgos_estructurados":["masa hipodensa en cabeza pancreatica","dilatacion de via biliar y conducto pancreatico"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de pancreas","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C07", "tipo": "positivo",
+      "paciente": {"paciente_id":"P07","edad":35,"sexo":"M","motivo_consulta":"ganglios inflamados","historia_clinica":"sudoracion nocturna y fiebre hace semanas","sintomas_actuales":["adenopatias indoloras","sintomas B","prurito","fatiga"],"factores_riesgo":["inmunosupresion"],"biomarcadores":{"LDH":"elevada"}},
+      "estudio": {"estudio_id":"E07","modalidad":"PET-TC de cuerpo entero","region_anatomica":"cuerpo entero","hallazgos_estructurados":["conglomerados ganglionares hipermetabolicos","compromiso esplenico"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Linfoma (Hodgkin y no Hodgkin)","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C08", "tipo": "positivo",
+      "paciente": {"paciente_id":"P08","edad":50,"sexo":"F","motivo_consulta":"nodulo en el cuello","historia_clinica":"exposicion a radiacion en cuello en la infancia","sintomas_actuales":["nodulo tiroideo palpable","disfonia","adenopatia cervical"],"factores_riesgo":["exposicion a radiacion","sexo femenino"],"biomarcadores":{"calcitonina":"elevada"}},
+      "estudio": {"estudio_id":"E08","modalidad":"Ecografia tiroidea","region_anatomica":"cuello","hallazgos_estructurados":["nodulo solido hipoecogenico mas alto que ancho","microcalcificaciones"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de tiroides","urgencia_esperada":"media"}
+    },
+    {
+      "caso_id": "C09", "tipo": "positivo",
+      "paciente": {"paciente_id":"P09","edad":58,"sexo":"M","motivo_consulta":"cefaleas y convulsion","historia_clinica":"cefalea progresiva matutina, primera convulsion","sintomas_actuales":["cefalea progresiva matutina","convulsiones de novo","deficit neurologico focal"],"factores_riesgo":["edad"],"biomarcadores":{"IDH1":"mutado"}},
+      "estudio": {"estudio_id":"E09","modalidad":"RM de cerebro con contraste","region_anatomica":"cerebro","hallazgos_estructurados":["lesion intraaxial con realce en anillo","edema perilesional","efecto de masa"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Glioma / Tumor cerebral primario","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C10", "tipo": "positivo",
+      "paciente": {"paciente_id":"P10","edad":60,"sexo":"F","motivo_consulta":"distension abdominal","historia_clinica":"nuliparidad, antecedente familiar de cancer de ovario","sintomas_actuales":["distension abdominal","saciedad precoz","dolor pelvico","ascitis"],"factores_riesgo":["nuliparidad","edad"],"biomarcadores":{"CA-125":"elevado"}},
+      "estudio": {"estudio_id":"E10","modalidad":"TC de abdomen y pelvis","region_anatomica":"pelvis","hallazgos_estructurados":["masa anexial compleja solido-quistica","ascitis","implantes peritoneales"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de ovario","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C11", "tipo": "positivo",
+      "paciente": {"paciente_id":"P11","edad":62,"sexo":"M","motivo_consulta":"dispepsia y perdida de peso","historia_clinica":"infeccion cronica por H. pylori, dieta rica en ahumados","sintomas_actuales":["dispepsia persistente","saciedad precoz","perdida de peso","melena"],"factores_riesgo":["H. pylori","tabaquismo"],"biomarcadores":{"CEA":"elevado"}},
+      "estudio": {"estudio_id":"E11","modalidad":"TC de abdomen","region_anatomica":"abdomen","hallazgos_estructurados":["engrosamiento parietal gastrico difuso","adenopatias perigastricas"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer gastrico","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C12", "tipo": "positivo",
+      "paciente": {"paciente_id":"P12","edad":67,"sexo":"M","motivo_consulta":"sangre en la orina","historia_clinica":"tabaquismo, exposicion laboral a tinturas","sintomas_actuales":["hematuria macroscopica indolora","polaquiuria"],"factores_riesgo":["tabaquismo","exposicion a aminas aromaticas"],"biomarcadores":{"citologia urinaria":"positiva"}},
+      "estudio": {"estudio_id":"E12","modalidad":"uro-TC","region_anatomica":"pelvis","hallazgos_estructurados":["lesion polipoidea en pared vesical con realce"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de vejiga","urgencia_esperada":"media"}
+    },
+    {
+      "caso_id": "C13", "tipo": "positivo",
+      "paciente": {"paciente_id":"P13","edad":48,"sexo":"F","motivo_consulta":"sangrado vaginal anormal","historia_clinica":"infeccion por VPH, tabaquismo","sintomas_actuales":["sangrado vaginal poscoital","flujo vaginal maloliente","dolor pelvico"],"factores_riesgo":["VPH","tabaquismo"],"biomarcadores":{"VPH":"16 positivo"}},
+      "estudio": {"estudio_id":"E13","modalidad":"RM de pelvis","region_anatomica":"pelvis","hallazgos_estructurados":["masa cervical con realce","invasion parametrial"]},
+      "ground_truth": {"requiere_imagen_esperado": true, "tipo_cancer_esperado":"Cancer de cuello uterino","urgencia_esperada":"alta"}
+    },
+    {
+      "caso_id": "C14", "tipo": "negativo",
+      "paciente": {"paciente_id":"P14","edad":28,"sexo":"F","motivo_consulta":"dolor de cabeza por estres","historia_clinica":"sin antecedentes oncologicos, examenes normales","sintomas_actuales":["cefalea tensional ocasional","cansancio por trabajo"],"factores_riesgo":[],"biomarcadores":{}},
+      "estudio": null,
+      "ground_truth": {"requiere_imagen_esperado": false, "tipo_cancer_esperado":"ninguno","urgencia_esperada":"baja"}
+    },
+    {
+      "caso_id": "C15", "tipo": "negativo",
+      "paciente": {"paciente_id":"P15","edad":34,"sexo":"M","motivo_consulta":"control de rutina","historia_clinica":"deportista, sin sintomas, sin antecedentes","sintomas_actuales":["ninguno relevante"],"factores_riesgo":[],"biomarcadores":{}},
+      "estudio": null,
+      "ground_truth": {"requiere_imagen_esperado": false, "tipo_cancer_esperado":"ninguno","urgencia_esperada":"baja"}
+    },
+    {
+      "caso_id": "C16", "tipo": "negativo",
+      "paciente": {"paciente_id":"P16","edad":40,"sexo":"F","motivo_consulta":"resfrio comun","historia_clinica":"cuadro gripal de 3 dias, sin banderas rojas","sintomas_actuales":["congestion nasal","dolor de garganta leve","febricula"],"factores_riesgo":[],"biomarcadores":{}},
+      "estudio": null,
+      "ground_truth": {"requiere_imagen_esperado": false, "tipo_cancer_esperado":"ninguno","urgencia_esperada":"baja"}
+    },
+    {
+      "caso_id": "C17", "tipo": "negativo",
+      "paciente": {"paciente_id":"P17","edad":52,"sexo":"M","motivo_consulta":"dolor lumbar mecanico","historia_clinica":"esfuerzo fisico reciente, mejora con reposo, sin perdida de peso","sintomas_actuales":["dolor lumbar que mejora con reposo"],"factores_riesgo":[],"biomarcadores":{}},
+      "estudio": null,
+      "ground_truth": {"requiere_imagen_esperado": false, "tipo_cancer_esperado":"ninguno","urgencia_esperada":"baja"}
+    },
+    {
+      "caso_id": "C18", "tipo": "negativo",
+      "paciente": {"paciente_id":"P18","edad":25,"sexo":"F","motivo_consulta":"ansiedad y insomnio","historia_clinica":"estres academico, sin sintomas fisicos de alarma","sintomas_actuales":["insomnio","preocupacion excesiva"],"factores_riesgo":[],"biomarcadores":{}},
+      "estudio": null,
+      "ground_truth": {"requiere_imagen_esperado": false, "tipo_cancer_esperado":"ninguno","urgencia_esperada":"baja"}
+    }
+  ]
+}
