@@ -42,7 +42,7 @@ Esta separacion responde a dos requisitos del dominio. El primero es la auditabi
 flowchart TD
     A["Caso clinico (JSON)"] --> B["Recuperacion sobre 30 entradas GT<br/>seis senales clinicas ponderadas por IDF"]
     B --> C{"Evidencia suficiente?"}
-    C -- No --> D["conclusive = false<br/>SIN_ELEMENTOS_PARA_EVALUAR"]
+    C -- No --> D["SIN ELEMENTOS PARA EVALUAR"]
     C -- Si --> E["Calibracion de match_probability"]
     E --> F["Formula de imaging_needed_probability"]
     F --> G["Reglas de decision:<br/>recommendation y urgency"]
