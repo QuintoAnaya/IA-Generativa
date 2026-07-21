@@ -8,9 +8,6 @@ El sistema conecta dos perfiles profesionales sobre una misma base de conocimien
 
 - **Componente 1 (oncologo).** Recupera del ground truth las hipotesis compatibles con el caso, estima la probabilidad de requerir diagnostico por imagenes y emite una recomendacion de derivacion.
 - **Componente 2 (radiologo).** Traduce la hipotesis principal en una guia de lectura y una referencia visual sintetica del patron que se espera encontrar en el estudio.
-
-Es un prototipo academico construido sobre datos sinteticos. No esta validado para uso clinico y no reemplaza el juicio profesional.
-
 ---
 
 ## Indice
