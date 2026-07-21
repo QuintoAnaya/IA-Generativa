@@ -1,0 +1,15 @@
+{
+  "case_id": "case_075",
+  "correct_gt_ids": [
+    "GT-HNF-001"
+  ],
+  "acceptable_secondary_gt_ids": [
+    "GT-ADRENAL-001"
+  ],
+  "imaging_needed_ground_truth": true,
+  "urgency_ground_truth": "media",
+  "specialist_decision": "DERIVAR_A_IMAGEN",
+  "conclusive_ground_truth": true,
+  "difficulty": "dificil",
+  "notes": "Nodulo hepatico indeterminado en mujer joven con ACO; cicatriz central no concluyente por ecografia. Caracterizar con RM/TC dinamica para confirmar HNF."
+}

@@ -1,0 +1,27 @@
+{
+  "patient_id": "PAT-00217",
+  "demographics": {
+    "age": 41,
+    "sex": "F",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "hallazgo incidental de lesion renal con grasa macroscopica conocida",
+    "asintomatica"
+  ],
+  "medical_history": [
+    {
+      "date": "2024-08",
+      "event": "TC: lesion renal derecha 1.5 cm con grasa macroscopica — angiomiolipoma tipico."
+    },
+    {
+      "date": "2025-06",
+      "event": "Ecografia de control: lesion estable sin cambios."
+    }
+  ],
+  "current_labs": {
+    "sedimento_urinario": "normal",
+    "hemoglobina": 13.6,
+    "creatinina": 0.8
+  }
+}

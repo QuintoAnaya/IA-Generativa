@@ -1,0 +1,30 @@
+{
+  "patient_id": "PAT-00122",
+  "demographics": {
+    "age": 52,
+    "sex": "F",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "aumento de peso central rapido con cara de luna y estrias violaceas",
+    "hipertension de reciente aparicion de dificil control",
+    "debilidad muscular proximal e hirsutismo progresivo"
+  ],
+  "medical_history": [
+    {
+      "date": "2025-06",
+      "event": "Hipertension de reciente aparicion, refractaria a dos farmacos."
+    },
+    {
+      "date": "2025-10",
+      "event": "TC abdominal: masa suprarrenal derecha heterogenea de 8 cm con bordes irregulares."
+    }
+  ],
+  "current_labs": {
+    "cortisol": "elevado",
+    "DHEA_S": "elevado",
+    "androgenos": "elevados",
+    "metanefrinas": "normales",
+    "LDH": 412
+  }
+}

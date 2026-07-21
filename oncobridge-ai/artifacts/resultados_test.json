@@ -1,0 +1,50 @@
+{
+  "n_casos": 34,
+  "manifest": "data_splits/test_cases.json",
+  "urgency_accuracy": 0.5909090909090909,
+  "accuracy_derivacion": 0.7647058823529411,
+  "sensibilidad": 0.8,
+  "especificidad": 0.7777777777777778,
+  "precision_gt_match": 0.8518518518518519,
+  "calibracion_pearson": 0.11784894575050292,
+  "conclusive_accuracy": 0.8823529411764706,
+  "eficiencia_tokens": {
+    "promedio_total_tokens_por_caso": 286.88235294117646,
+    "promedio_gt_recuperados_por_rag": 8.588235294117647,
+    "promedio_gt_en_contexto_del_llm": 4.176470588235294,
+    "compresion_contexto_pct": 51.36986301369863
+  },
+  "confusion_derivacion": {
+    "tp": 20,
+    "fn": 5,
+    "tn": 7,
+    "fp": 2
+  },
+  "por_categoria": {
+    "TP": {
+      "total": 9,
+      "recommendation_correcta": 7,
+      "accuracy": 0.7777777777777778
+    },
+    "TN": {
+      "total": 9,
+      "recommendation_correcta": 6,
+      "accuracy": 0.6666666666666666
+    },
+    "FP": {
+      "total": 5,
+      "recommendation_correcta": 2,
+      "accuracy": 0.4
+    },
+    "FN": {
+      "total": 5,
+      "recommendation_correcta": 5,
+      "accuracy": 1.0
+    },
+    "COMPLEX": {
+      "total": 6,
+      "recommendation_correcta": 6,
+      "accuracy": 1.0
+    }
+  }
+}

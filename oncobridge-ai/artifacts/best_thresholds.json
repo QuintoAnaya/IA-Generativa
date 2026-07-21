@@ -1,0 +1,15 @@
+{
+  "dataset_fingerprint": "e8643bb5519243a1",
+  "manifest": "data_splits/train_cases.json",
+  "min_sensibilidad": 0.85,
+  "best_thresholds": {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65
+  },
+  "metricas_en_train": {
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "patient_id": "PAT-00204",
+  "demographics": {
+    "age": 65,
+    "sex": "M",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "control anual sin sintomas",
+    "paciente asintomatico"
+  ],
+  "medical_history": [
+    {
+      "date": "2018-2025",
+      "event": "Chequeos anuales de rutina normales."
+    },
+    {
+      "date": "2024-04",
+      "event": "Colonoscopia: 1 polipo hiperplasico extirpado."
+    }
+  ],
+  "current_labs": {
+    "hemograma": "normal",
+    "CEA": 1.1,
+    "funcion_renal": "normal"
+  }
+}

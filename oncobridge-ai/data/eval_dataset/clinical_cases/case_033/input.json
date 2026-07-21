@@ -1,0 +1,22 @@
+{
+  "patient_id": "PAT-00203",
+  "demographics": {
+    "age": 42,
+    "sex": "F",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "control de rutina por renovacion de seguro"
+  ],
+  "medical_history": [
+    {
+      "date": "2025-04",
+      "event": "Ecografia abdominal de control normal."
+    }
+  ],
+  "current_labs": {
+    "hemograma": "normal",
+    "tiroides": "normal",
+    "CEA": 1.1
+  }
+}

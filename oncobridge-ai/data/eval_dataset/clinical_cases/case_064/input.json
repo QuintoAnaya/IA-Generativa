@@ -1,0 +1,22 @@
+{
+  "patient_id": "PAT-00304",
+  "demographics": {
+    "age": 28,
+    "sex": "F",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "dolor lumbar leve intermitente",
+    "sin signos de alarma"
+  ],
+  "medical_history": [
+    {
+      "date": "2024",
+      "event": "Lesion renal con densidad grasa (angiomiolipoma) estable en controles."
+    }
+  ],
+  "current_labs": {
+    "hemograma": "normal",
+    "funcion_renal": "normal"
+  }
+}

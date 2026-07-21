@@ -1,0 +1,13 @@
+{
+  "case_id": "case_076",
+  "correct_gt_ids": [
+    "GT-GASTRIC-001"
+  ],
+  "acceptable_secondary_gt_ids": [],
+  "imaging_needed_ground_truth": true,
+  "urgency_ground_truth": "media",
+  "specialist_decision": "DERIVAR_A_IMAGEN",
+  "conclusive_ground_truth": true,
+  "difficulty": "dificil",
+  "notes": "Adenocarcinoma gastrico sutil: dispepsia inespecifica con saciedad precoz y labs limitrofes (Hb y ferritina en el limite bajo, marcadores apenas por encima). Presentacion enganosa tipo funcional. Requiere endoscopia con biopsia e imagen."
+}

@@ -1,0 +1,52 @@
+{
+  "patient_id": "PAT-00517",
+  "demographics": {
+    "age": 62,
+    "sex": "M",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "masa renal derecha con multiples nodulos hepaticos hallados en TC por dolor lumbar"
+  ],
+  "medical_history": [
+    {
+      "date": "2010",
+      "event": "Hipertension arterial de larga data."
+    },
+    {
+      "date": "2015",
+      "event": "Tabaquismo 25 paquetes-ano."
+    },
+    {
+      "date": "2018",
+      "event": "Ecografia: rinon derecho con imagen dudosa, no seguida."
+    },
+    {
+      "date": "2022",
+      "event": "Sin controles por imagen."
+    },
+    {
+      "date": "2024",
+      "event": "Perdida de peso no cuantificada."
+    },
+    {
+      "date": "2025-08",
+      "event": "Lumbalgia derecha que no cede con AINE."
+    },
+    {
+      "date": "2025-10",
+      "event": "Ecografia: masa solida rinon derecho 7 cm con trombo en vena renal."
+    },
+    {
+      "date": "2025-11",
+      "event": "TC torax-abdomen-pelvis: masa renal derecha y multiples nodulos hepaticos."
+    }
+  ],
+  "current_labs": {
+    "sedimento_urinario": "hematuria macroscopica",
+    "hemoglobina": 9.8,
+    "LDH": 640,
+    "calcio": 11.4,
+    "creatinina": 1.6
+  }
+}

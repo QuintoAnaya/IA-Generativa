@@ -1,0 +1,902 @@
+[
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7843,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.6,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.78,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6522
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7698,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.6087
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7515,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.5217
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.55,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.751,
+    "accuracy_derivacion": 0.7632,
+    "sensibilidad": 0.9245,
+    "especificidad": 0.5652
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.6,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.65,
+    "objetivo": 0.7477,
+    "accuracy_derivacion": 0.8026,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.5,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7327,
+    "accuracy_derivacion": 0.7763,
+    "sensibilidad": 0.9434,
+    "especificidad": 0.4783
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.4,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.15,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.2,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.25,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.45,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.5,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  },
+  {
+    "threshold_derivar": 0.45,
+    "threshold_seguimiento": 0.3,
+    "threshold_benign_no_referral": 0.55,
+    "objetivo": 0.7288,
+    "accuracy_derivacion": 0.7895,
+    "sensibilidad": 0.9623,
+    "especificidad": 0.4348
+  }
+]
