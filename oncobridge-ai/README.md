@@ -44,7 +44,7 @@ flowchart TD
     B --> C{"Evidencia suficiente?"}
     C -- No --> D["SIN ELEMENTOS PARA EVALUAR"]
     C -- Si --> E["Calibracion de match_probability"]
-    E --> F["Formula de imaging_needed_probability"]
+    E --> F["Cálculo de la probabilidad de necesitar imagen"]
     F --> G["Reglas de decision:<br/>recommendation y urgency"]
     G --> H["Modelo de lenguaje:<br/>redaccion unicamente"]
     H --> I["Salida Componente 1"]
