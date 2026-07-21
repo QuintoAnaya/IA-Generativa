@@ -34,7 +34,7 @@ El costo de esa brecha es medible. El estadio al momento del diagnostico es el p
 
 ## 2. Arquitectura
 
-La decision de diseno central es la separacion entre la logica con consecuencia clinica y la generacion de lenguaje natural. Las hipotesis, las probabilidades y la recomendacion se resuelven por completo mediante codigo deterministico antes de cualquier llamada al modelo generativo. El modelo de lenguaje interviene unicamente para redactar los textos sobre valores ya cerrados, y no tiene capacidad de modificar un `gt_id`, una probabilidad ni una recomendacion.
+La decisión de diseño central es la separación entre la lógica con consecuencia clínica y la generación de lenguaje natural. Las hipotesis, las probabilidades y la recomendación se resuelven por completo mediante codigo deterministico antes de cualquier llamada al modelo generativo. El modelo de lenguaje interviene unicamente para redactar los textos sobre valores ya cerrados, y no tiene capacidad de modificar un `gt_id`, una probabilidad ni una recomendacion.
 
 Esta separacion responde a dos requisitos del dominio. El primero es la auditabilidad: toda hipotesis que el sistema propone puede justificarse enumerando la evidencia que la sostiene. El segundo es el control del riesgo de alucinacion, que se concentra asi en los textos explicativos y no en las decisiones.
 
