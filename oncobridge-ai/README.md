@@ -2,7 +2,7 @@
 
 Sistema de apoyo a la decision oncologica desarrollado como Trabajo Final de IA Generativa para Datos Biomedicos, Universidad Austral.
 
-**Integrantes:** Beto (QuintoAnaya) — *(segundo integrante: completar)*
+**Integrantes:** Fausto Paredes y Emerio Quinto Tenreyro Anaya
 
 El sistema conecta dos perfiles profesionales sobre una misma base de conocimiento oncologico:
 
