@@ -1,0 +1,15 @@
+{
+  "case_id": "case_061",
+  "correct_gt_ids": [
+    "GT-PIELONEFRITIS-001"
+  ],
+  "acceptable_secondary_gt_ids": [
+    "GT-COLANGIO-001"
+  ],
+  "imaging_needed_ground_truth": true,
+  "urgency_ground_truth": "media",
+  "specialist_decision": "DERIVAR_A_IMAGEN",
+  "conclusive_ground_truth": true,
+  "difficulty": "moderado",
+  "notes": "Pielonefritis aguda: fiebre con escalofrios, Giordano positivo, disuria y urocultivo positivo. Cuadro infeccioso agudo benigno; la leucocitosis con neutrofilia y bacteriuria orientan a infeccion. Imagen para descartar absceso."
+}

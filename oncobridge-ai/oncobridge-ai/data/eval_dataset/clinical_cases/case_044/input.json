@@ -1,0 +1,22 @@
+{
+  "patient_id": "PAT-00214",
+  "demographics": {
+    "age": 59,
+    "sex": "M",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "chequeo prelaboral para nueva empresa"
+  ],
+  "medical_history": [
+    {
+      "date": "2024",
+      "event": "Sin antecedentes de relevancia."
+    }
+  ],
+  "current_labs": {
+    "hemograma": "normal",
+    "CEA": 1.4,
+    "sangre_oculta": "negativa"
+  }
+}

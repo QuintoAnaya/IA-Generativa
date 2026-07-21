@@ -1,0 +1,19 @@
+# Nunca subir la API key real
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Salidas generadas en tiempo de ejecucion
+output/
+
+# Sistema operativo / editores
+.DS_Store
+.vscode/
+.idea/
+
+# Referencias visuales generadas
+output/generated_references/

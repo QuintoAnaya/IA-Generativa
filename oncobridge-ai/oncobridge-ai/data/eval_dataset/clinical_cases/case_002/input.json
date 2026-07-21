@@ -1,0 +1,25 @@
+{
+  "patient_id": "PAT-00102",
+  "demographics": {
+    "age": 59,
+    "sex": "M",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "hematuria macroscopica 2 semanas",
+    "dolor en flanco derecho persistente",
+    "fatiga y perdida de peso 4 kg"
+  ],
+  "medical_history": [
+    {
+      "date": "2024-09",
+      "event": "Ecografia abdominal: masa solida rinon derecho 5 cm. Recomendacion TC, no concretada."
+    }
+  ],
+  "current_labs": {
+    "sedimento_urinario": "hematuria",
+    "hemoglobina": 11.2,
+    "LDH": 290,
+    "creatinina": 1.2
+  }
+}

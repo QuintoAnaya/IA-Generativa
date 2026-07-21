@@ -1,0 +1,58 @@
+{
+  "patient_id": "PAT-00511",
+  "demographics": {
+    "age": 60,
+    "sex": "M",
+    "family_history": [
+      "carcinoma_renal"
+    ]
+  },
+  "current_symptoms": [
+    "hematuria macroscopica reciente",
+    "dolor en flanco izquierdo de 4 semanas"
+  ],
+  "medical_history": [
+    {
+      "date": "1995",
+      "event": "Padre con carcinoma renal a edad temprana."
+    },
+    {
+      "date": "2000",
+      "event": "Inicio de controles por imagen por antecedente familiar."
+    },
+    {
+      "date": "2005",
+      "event": "TC: quiste complejo rinon derecho — vigilancia."
+    },
+    {
+      "date": "2008",
+      "event": "Nefrectomia parcial derecha por lesion Bosniak III benigna."
+    },
+    {
+      "date": "2010",
+      "event": "Controles anuales estables."
+    },
+    {
+      "date": "2015",
+      "event": "Ecografia anual sin cambios."
+    },
+    {
+      "date": "2020",
+      "event": "TC anual — sin lesiones nuevas."
+    },
+    {
+      "date": "2023",
+      "event": "HTA en tratamiento, tabaquismo previo."
+    },
+    {
+      "date": "2025-11",
+      "event": "Aparicion de masa renal izquierda (rinon contralateral, nunca antes)."
+    }
+  ],
+  "current_labs": {
+    "sedimento_urinario": "hematuria",
+    "hemoglobina": 11.8,
+    "LDH": 300,
+    "creatinina": 1.5
+  }
+}

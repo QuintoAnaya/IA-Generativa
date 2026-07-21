@@ -1,0 +1,36 @@
+{
+  "patient_id": "PAT-00121",
+  "demographics": {
+    "age": 48,
+    "sex": "F",
+    "family_history": [
+      "sindrome de Li-Fraumeni"
+    ]
+  },
+  "current_symptoms": [
+    "aumento de peso central y cara de luna",
+    "hipertension de reciente aparicion",
+    "dolor lumbar bajo persistente",
+    "perdida de peso reciente 4 kg"
+  ],
+  "medical_history": [
+    {
+      "date": "2022-04",
+      "event": "TC: nodulo suprarrenal izquierdo de 3 cm."
+    },
+    {
+      "date": "2024-09",
+      "event": "Masa suprarrenal de 6 cm, duplico su tamano en 2 anos."
+    },
+    {
+      "date": "2025-12",
+      "event": "Antecedente familiar de sindrome de Li-Fraumeni."
+    }
+  ],
+  "current_labs": {
+    "cortisol": "elevado",
+    "DHEA_S": "elevado",
+    "metanefrinas": "normales",
+    "LDH": 224
+  }
+}

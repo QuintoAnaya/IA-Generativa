@@ -1,0 +1,27 @@
+{
+  "patient_id": "PAT-00228",
+  "demographics": {
+    "age": 50,
+    "sex": "F",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "fatiga leve inespecifica",
+    "sin signos de alarma"
+  ],
+  "medical_history": [
+    {
+      "date": "2024-08",
+      "event": "Anticonceptivos orales desde hace 1 ano."
+    },
+    {
+      "date": "2025-09",
+      "event": "Ecografia abdominal de control normal."
+    }
+  ],
+  "current_labs": {
+    "TSH": 2.4,
+    "hemograma": "normal",
+    "funcion_renal": "normal"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "case_088",
+  "correct_gt_ids": [
+    "GT-ADRENAL-001"
+  ],
+  "acceptable_secondary_gt_ids": [],
+  "imaging_needed_ground_truth": true,
+  "urgency_ground_truth": "alta",
+  "specialist_decision": "DERIVAR_A_IMAGEN",
+  "conclusive_ground_truth": true,
+  "difficulty": "dificil",
+  "notes": "Carcinoma adrenocortical atipico casi no funcionante: masa suprarrenal grande con LDH alta y escasos sintomas hormonales. Derivar a imagen."
+}

@@ -1,0 +1,26 @@
+{
+  "patient_id": "PAT-00414",
+  "demographics": {
+    "age": 65,
+    "sex": "M",
+    "family_history": []
+  },
+  "current_symptoms": [
+    "dolor abdominal vago en hipocondrio derecho 6 meses",
+    "hipertension de reciente aparicion",
+    "fatiga y leve aumento de peso central"
+  ],
+  "medical_history": [
+    {
+      "date": "2025-06",
+      "event": "Ecografia abdominal: masa suprarrenal derecha de 6 cm y nodulo hepatico incidental de 2 cm de significado incierto."
+    }
+  ],
+  "current_labs": {
+    "cortisol": "levemente elevado",
+    "DHEA_S": "elevado",
+    "metanefrinas": "normales",
+    "AFP": "normal",
+    "hemograma": "anemia leve"
+  }
+}
