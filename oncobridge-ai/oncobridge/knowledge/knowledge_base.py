@@ -1,18 +1,3 @@
-"""
-Base de conocimiento oncologica y recuperacion de hipotesis (RAG).
-
-El retrieval no usa embeddings. Usa coincidencia de terminos clinicos
-normalizados, ponderados por especificidad (IDF), mas un conjunto de señales
-clinicas que se puntuan por separado. La razon de esta eleccion es la
-trazabilidad: cada hipotesis que el sistema propone puede justificarse
-enumerando exactamente que evidencia la sostiene (que sintomas, que factores
-de riesgo, que biomarcadores), lo que en un dominio medico pesa mas que la
-mejora marginal de similaridad semantica que aportaria un embedding.
-
-La recuperacion tampoco consume contexto del LLM: todo el scoring se resuelve
-en CPU antes de cualquier llamada al modelo generativo.
-"""
-
 from __future__ import annotations
 
 import json
@@ -45,10 +30,7 @@ STOPWORDS = {
     "resultado", "resultados", "informe", "estudio", "examen", "normal",
 }
 
-# Normalizacion de vocabulario. El dataset mezcla terminologia en espanol
-# (historias clinicas) con terminologia en ingles (prompts de imagen, algunos
-# nombres de biomarcadores) y alterna registro tecnico y coloquial. Sin esta
-# tabla, "kidney" y "rinon" se tratan como terminos distintos y no matchean.
+# Normalizacion de vocabulario.
 SYNONYMS = {
     "lung": "pulmon", "pulmonary": "pulmon", "pulmonar": "pulmon",
     "kidney": "rinon", "renal": "rinon",
@@ -66,11 +48,7 @@ SYNONYMS = {
     "sangrado": "hemorragia",
 }
 
-# Terminos que anclan un caso a un organo concreto. Se usan como señal de
-# especificidad anatomica: dos condiciones pueden compartir vocabulario clinico
-# generico ("masa", "dolor", "perdida de peso") y distinguirse unicamente por el
-# organo comprometido. Sin esta señal el retrieval confunde de forma sistematica
-# entidades de organos vecinos, por ejemplo rinon y suprarrenal.
+# Terminos que anclan un caso a un organo concreto. 
 ORGAN_TERMS = {
     "pulmon": {"pulmon", "torax", "toracico", "tos", "disnea", "hemoptisis",
                "esputo", "respiratorio", "pleural", "bronquio", "hiliar"},
@@ -114,15 +92,6 @@ def flatten(value) -> str:
 
 
 def coverage(query_tokens: set, field_tokens: set, idf_fn) -> float:
-    """Fraccion del vocabulario del paciente, ponderada por especificidad, que
-    queda explicada por un campo de la entrada.
-
-    Se usa cobertura y no indice de Jaccard porque Jaccard divide por la union
-    de ambos vocabularios, lo que penaliza a las entradas con descripciones mas
-    extensas aunque compartan mas terminos especificos con el paciente. En una
-    base donde el nivel de detalle varia entre entradas, esa penalizacion
-    introduce un sesgo sin justificacion clinica.
-    """
     if not query_tokens or not field_tokens:
         return 0.0
     shared = query_tokens & field_tokens
@@ -175,10 +144,6 @@ class GroundTruthEntry:
         return self.objective_data.get("biomarkers", {}) or {}
 
     def field_tokens(self) -> dict:
-        """Tokens agrupados por campo clinico. Se mantienen separados, en vez de
-        concatenarse en un unico bloque de texto, para poder puntuar cada tipo
-        de evidencia por su cuenta y reportar despues cual sostiene la hipotesis.
-        """
         return {
             "symptoms": tokenize(
                 flatten(self.subjective_data.get("symptoms")) + " "
@@ -233,13 +198,6 @@ class KnowledgeBase:
         return None
 
     def _compute_idf(self) -> dict:
-        """Especificidad de cada termino dentro de la base.
-
-        Un termino presente en casi todas las entradas (por ejemplo "masa" o
-        "carcinoma", habituales en cualquier base oncologica) no discrimina entre
-        hipotesis y debe pesar poco. Uno que aparece en una o dos entradas
-        ("hematuria", "ictericia") es el que efectivamente separa diagnosticos.
-        """
         n_docs = len(self.entries)
         doc_freq: dict = {}
         for e in self.entries:
@@ -270,10 +228,6 @@ class KnowledgeBase:
                 matched_biomarkers.append(f"{name}={patient_value}")
         s_biomarkers = len(matched_biomarkers) / max(1, len(biomarkers)) if biomarkers else 0.0
 
-        # Factor de riesgo etario. Varias entradas expresan la edad como factor
-        # de riesgo en texto libre ("edad > 50 anos"); la coincidencia de
-        # terminos no lo captura porque el paciente aporta un numero y no la
-        # palabra, de modo que se evalua aparte.
         age_evidence = False
         if isinstance(age, (int, float)):
             risk_text = normalize_text(flatten(entry.objective_data.get("risk_factors")))
@@ -282,12 +236,6 @@ class KnowledgeBase:
                 s_risk = max(s_risk, 0.40)
                 age_evidence = True
 
-        # Suficiencia de informacion. Un caso descripto con muy pocos terminos
-        # informativos no aporta base para sostener ninguna hipotesis: con un
-        # vocabulario de una o dos palabras, un unico termino coincidente
-        # produce cobertura total y la relevancia se dispara sin evidencia real.
-        # El factor atenua la relevancia de forma proporcional hasta alcanzar un
-        # minimo de vocabulario clinico.
         sufficiency = min(1.0, len(query_tokens) / 5.0)
 
         relevance = sufficiency * (
@@ -299,9 +247,6 @@ class KnowledgeBase:
             + 0.10 * s_biomarkers
         )
 
-        # Evidencia legible. Una hipotesis que no puede enumerar sobre que se
-        # apoya no se propone (ver `retrieve`): el sistema tiene que poder
-        # responder siempre por que sugirio lo que sugirio.
         evidence = []
         if s_symptoms > 0:
             evidence.append("síntomas compatibles")
@@ -335,13 +280,6 @@ class KnowledgeBase:
 
     def retrieve(self, patient_text: str, labs: dict, age=None,
                  candidate_threshold: float = 0.03, top_k_context: int = 5) -> dict:
-        """Puntua la base completa contra el caso y devuelve las candidatas.
-
-        `candidates` son todas las entradas con señal por encima del umbral, es
-        decir lo que el RAG recupero. `in_context` son las top-k que
-        efectivamente se le pasarian al LLM. La diferencia entre ambas
-        cantidades es la compresion de contexto que reporta `token_usage`.
-        """
         query_tokens = tokenize(patient_text)
         scored = [self.score_entry(query_tokens, labs, age, e) for e in self.entries]
         scored.sort(key=lambda r: r.relevance, reverse=True)
@@ -358,9 +296,6 @@ class KnowledgeBase:
 
 
 def _lookup_lab(labs: dict, biomarker_name: str):
-    """Busca el valor de un biomarcador entre los labs del paciente, tolerando
-    diferencias de mayusculas, tildes y separadores en el nombre del campo.
-    """
     if not labs:
         return None
     target = normalize_text(biomarker_name).replace(" ", "_")
@@ -371,18 +306,6 @@ def _lookup_lab(labs: dict, biomarker_name: str):
 
 
 def _threshold_satisfied(patient_value, rule) -> bool:
-    """Decide si el valor del paciente cumple la condicion de anormalidad que
-    describe el ground truth.
-
-    Solo devuelve True cuando la regla expresa un umbral numerico explicito
-    ("> 37 U/mL", "< 12 g/dL") y el valor del paciente lo supera. Las
-    descripciones puramente cualitativas del dataset ("elevada", "variable",
-    "expresion variable") no se cuentan como evidencia: no son verificables
-    contra un numero, y aceptarlas hacia que cualquier paciente con un lab
-    cargado sumara evidencia a favor de decenas de entradas que comparten
-    marcadores inespecificos como LDH o VSG. Es una decision conservadora
-    deliberada, documentada como limitacion en el README.
-    """
     if isinstance(patient_value, bool) or not isinstance(patient_value, (int, float)):
         return False
     match = re.search(r"([><])\s*=?\s*([\d.,]+)", str(rule))
