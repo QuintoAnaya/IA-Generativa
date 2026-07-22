@@ -304,13 +304,13 @@ class KnowledgeBase:
         # responder siempre por que sugirio lo que sugirio.
         evidence = []
         if s_symptoms > 0:
-            evidence.append("sintomas compatibles")
+            evidence.append("síntomas compatibles")
         if s_findings > 0:
-            evidence.append("hallazgos clinicos compatibles")
+            evidence.append("hallazgos clínicos compatibles")
         if organ_hits:
             evidence.append(f"compromiso de {entry.organ}")
         if age_evidence:
-            evidence.append(f"edad ({age} anios) dentro del grupo de riesgo")
+            evidence.append(f"edad ({age} años) dentro del grupo de riesgo")
         elif s_risk > 0:
             evidence.append("factores de riesgo compatibles")
         if s_flags > 0:
