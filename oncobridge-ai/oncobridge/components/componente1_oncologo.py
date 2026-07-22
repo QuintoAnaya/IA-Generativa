@@ -1,21 +1,3 @@
-"""
-Componente 1 - Analisis clinico (perfil oncologo).
-
-Orden de ejecucion:
-
-  1. Recuperacion de hipotesis contra la base de conocimiento (RAG, sin LLM).
-  2. Calibracion de `match_probability` por entrada.
-  3. Calculo de `imaging_needed_probability` con la formula documentada en
-     scoring.py, y derivacion de `recommendation` y `urgency` por reglas.
-  4. Redaccion del texto en lenguaje natural, unico punto donde interviene el LLM.
-
-La separacion entre los pasos 1-3 y el paso 4 es la decision de diseno central
-del sistema: toda la logica con consecuencia clinica queda resuelta por codigo
-deterministico y auditable antes de que el modelo generativo reciba nada. El LLM
-no puede modificar un gt_id, una probabilidad ni una recomendacion; solo redacta
-sobre valores ya cerrados.
-"""
-
 from __future__ import annotations
 
 from oncobridge.knowledge.knowledge_base import KnowledgeBase, GroundTruthEntry, flatten
@@ -30,8 +12,6 @@ from oncobridge.utils.schemas import (
     TokenUsage,
 )
 
-# Valores por defecto. Se sobrescriben con los calibrados en train
-# (artifacts/best_thresholds.json) cuando ese archivo existe.
 MATCH_THRESHOLD = 0.10
 MAX_HYPOTHESES = 3
 
@@ -45,14 +25,6 @@ def _patient_searchable_text(patient: PatientInput) -> str:
 
 
 def _calibrate_match_probability(relevance: float, base_probability: float) -> float:
-    """Combina la relevancia absoluta del retrieval con la probabilidad a priori
-    de la entrada.
-
-    La relevancia se toma en escala absoluta y no relativa al mejor candidato
-    del caso. Normalizar contra el maximo del propio caso hace que, en pacientes
-    sin patologia, el candidato menos malo quede con probabilidad alta aunque la
-    evidencia sea nula, porque siempre existe un maximo.
-    """
     p = 0.62 * min(1.0, relevance / 0.45) + 0.38 * base_probability
     return max(0.02, min(0.97, p))
 
@@ -148,8 +120,6 @@ def run_component1(patient: PatientInput, kb: KnowledgeBase, llm: GeminiClient) 
         conclusive, imaging_needed_probability, top_urgency, top_icd
     )
 
-    # Redaccion en lenguaje natural. Si no hay API key configurada, el cliente
-    # devuelve el texto de respaldo sin fallar (ver utils/llm_client.py).
     summary_fallback = _summary_text(patient)
     summary_resp = llm.generate(
         "Reformula el siguiente resumen clinico en dos oraciones, en espanol neutro, "
