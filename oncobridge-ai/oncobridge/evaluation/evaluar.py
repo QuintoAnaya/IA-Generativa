@@ -1,27 +1,3 @@
-"""
-Motor de evaluacion. Corre el Componente 1 contra los 110 casos clinicos del
-dataset y calcula las metricas pedidas en la seccion 5.2 del enunciado.
-
-Metricas de Componente 1 implementadas:
-  - Accuracy de Derivacion: coincidencia de `recommendation` vs `specialist_decision`.
-  - Sensibilidad (Recall): de los casos que SI necesitan imagen (ground truth),
-    % que el sistema tambien deriva.
-  - Especificidad: de los casos que NO necesitan imagen, % que el sistema
-    tambien descarta.
-  - Precision de GT Match: % de casos donde el gt_id de mayor `match_probability`
-    esta entre los `correct_gt_ids` (o `acceptable_secondary_gt_ids`) esperados.
-  - Calibracion de GT Probability: correlacion (Pearson) entre `match_probability`
-    del gt top y si el match fue efectivamente correcto (1/0) — una forma simple
-    y estandar de medir calibracion sin necesitar bins de probabilidad con pocos
-    datos por bin.
-  - Eficiencia de Tokens: promedio de `total_tokens` por caso, y promedio de
-    `gt_entries_in_context` / `retrieved_gt_entries` (cuanto se comprimio el
-    contexto respecto a lo recuperado).
-
-Uso:
-    python scripts/run_evaluacion.py
-"""
-
 from __future__ import annotations
 
 import json
@@ -45,8 +21,6 @@ def _pearson(xs: list, ys: list) -> float:
 
 
 def load_cases(dataset_dir: str, manifest: str = None) -> list:
-    """Carga los casos del dataset. Con `manifest`, restringe a los case_id de
-    esa particion (ver scripts/split_dataset.py)."""
     dataset_dir = Path(dataset_dir)
     index = json.loads((dataset_dir / "index.json").read_text(encoding="utf-8"))
     allowed = None
@@ -76,13 +50,11 @@ def evaluate(kb_path: str = "data/knowledge_base", dataset_dir: str = "data/eval
             print(f"  {case['case_id']} ({case['category']:8s}) -> "
                   f"{output['recommendation']:28s} (esperado: {case['expected']['specialist_decision']})")
 
-    # --- Accuracy de derivacion (recommendation vs specialist_decision) ---
     correct_recommendation = sum(
         1 for r in rows if r["output"]["recommendation"] == r["case"]["expected"]["specialist_decision"]
     )
     accuracy_derivacion = correct_recommendation / len(rows)
 
-    # --- Sensibilidad / especificidad (necesita imagen si o no) ---
     tp = fn = tn = fp = 0
     for r in rows:
         needed_gt = r["case"]["expected"]["imaging_needed_ground_truth"]
@@ -98,7 +70,6 @@ def evaluate(kb_path: str = "data/knowledge_base", dataset_dir: str = "data/eval
     sensibilidad = tp / (tp + fn) if (tp + fn) else float("nan")
     especificidad = tn / (tn + fp) if (tn + fp) else float("nan")
 
-    # --- Precision de GT match (top-1 dentro de correct + secundarios aceptables) ---
     gt_match_hits = 0
     gt_match_evaluable = 0
     calib_probs, calib_hits = [], []
@@ -119,13 +90,11 @@ def evaluate(kb_path: str = "data/knowledge_base", dataset_dir: str = "data/eval
     precision_gt_match = gt_match_hits / gt_match_evaluable if gt_match_evaluable else float("nan")
     calibracion = _pearson(calib_probs, calib_hits)
 
-    # --- Conclusive accuracy (bonus, no pedido explicitamente pero relevante) ---
     conclusive_correct = sum(
         1 for r in rows if r["output"]["conclusive"] == r["case"]["expected"]["conclusive_ground_truth"]
     )
     conclusive_accuracy = conclusive_correct / len(rows)
 
-    # --- Eficiencia de tokens ---
     total_tokens = [r["output"]["token_usage"]["total_tokens"] for r in rows]
     retrieved = [r["output"]["token_usage"]["retrieved_gt_entries"] for r in rows]
     in_context = [r["output"]["token_usage"]["gt_entries_in_context"] for r in rows]
@@ -133,7 +102,6 @@ def evaluate(kb_path: str = "data/knowledge_base", dataset_dir: str = "data/eval
     avg_retrieved = statistics.mean(retrieved)
     avg_in_context = statistics.mean(in_context)
 
-    # --- Desglose por categoria (TP/TN/FP/FN/COMPLEX) ---
     by_category = {}
     for r in rows:
         cat = r["case"]["category"]
@@ -144,8 +112,6 @@ def evaluate(kb_path: str = "data/knowledge_base", dataset_dir: str = "data/eval
     for cat, d in by_category.items():
         d["accuracy"] = d["recommendation_correcta"] / d["total"]
 
-    # Concordancia de urgencia, solo sobre los casos que efectivamente se derivan.
-    urgency_evaluable = urgency_correct = 0
     for r in rows:
         if r["output"]["recommendation"] == "DERIVAR_A_IMAGEN":
             urgency_evaluable += 1
