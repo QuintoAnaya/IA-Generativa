@@ -122,6 +122,26 @@ class TokenUsage:
 
 
 @dataclass
+class TokenUsageC2:
+    """Uso de tokens del Componente 2.
+
+    El contrato del Componente 2 (seccion 4.3 del enunciado) define solo cuatro
+    campos, sin `retrieved_gt_entries` ni `gt_entries_in_context`, porque esos
+    dos son propios de la etapa de recuperacion del Componente 1 y no aplican
+    aca. Se usa una clase separada para no arrastrar campos que en este
+    componente no tendrian significado.
+    """
+
+    prompt_tokens: int
+    completion_tokens: int
+    total_tokens: int
+    model: str
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
+@dataclass
 class Component1Output:
     patient_id: str
     clinical_summary: str
@@ -148,12 +168,46 @@ class Component1Output:
 
 
 # ---------------------------------------------------------------------------
-# Output de Componente 2
+# Output de Componente 2 (contrato: seccion 4.3 del enunciado)
 # ---------------------------------------------------------------------------
+
+CLASSIFICATION_VALUES = ("sospechoso", "probablemente_benigno", "indeterminado", "sin_hallazgos")
+
+
+@dataclass
+class RegionOfInterest:
+    """Region de interes del contrato (seccion 4.3).
+
+    Nota sobre `size_mm`: el contrato lo define como un numero (por ejemplo 26.0).
+    Ese numero solo puede medirse sobre una imagen real del paciente. Cuando el
+    Componente 2 recibe un estudio real, el valor se toma de ahi; cuando no hay
+    imagen disponible, se utiliza el tamano tipico esperado que la propia entrada
+    de ground truth documenta para esa lesion, y se deja constancia en `findings`
+    de que es un valor de referencia y no una medicion sobre el paciente. Si la
+    base no aporta un tamano de referencia, el campo queda en null.
+    """
+
+    id: str
+    location: str
+    size_mm: Optional[float]
+    shape: str
+    margins: str
+    density: str
+    measurement_source: str = "referencia_ground_truth"  # "imagen_real" | "referencia_ground_truth"
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
 
 @dataclass
 class GeneratedReference:
-    """Metadatos de la referencia visual sintetica producida por el Componente 2."""
+    """Metadatos de la referencia visual sintetica.
+
+    Este bloque no forma parte del contrato minimo del Componente 2; se agrega
+    como material de trazabilidad para documentar con que modelo, dispositivo y
+    prompt se genero la imagen de referencia, y para dejar registrada su
+    limitacion. No sustituye ninguno de los campos del contrato.
+    """
     image_path: str
     model: str
     gt_id: str
@@ -169,24 +223,29 @@ class GeneratedReference:
 @dataclass
 class Component2Output:
     patient_id: str
-    source_gt_id: str
-    expected_findings: str
-    reading_guide: dict
-    generated_radiology_reference: GeneratedReference
-    confidence_in_hypothesis: float
+    segmentation: dict  # {"regions_of_interest": [RegionOfInterest, ...]}
+    findings: str
+    classification: str
+    confidence: float
     final_recommendation: str
     next_steps: list
-    token_usage: TokenUsage
+    token_usage: TokenUsageC2
+    generated_radiology_reference: GeneratedReference  # trazabilidad, fuera del contrato minimo
 
     def to_dict(self) -> dict:
+        rois = self.segmentation.get("regions_of_interest", [])
         return {
             "patient_id": self.patient_id,
-            "source_gt_id": self.source_gt_id,
-            "expected_findings": self.expected_findings,
-            "reading_guide": self.reading_guide,
-            "generated_radiology_reference": self.generated_radiology_reference.to_dict(),
-            "confidence_in_hypothesis": round(self.confidence_in_hypothesis, 4),
+            "segmentation": {
+                "regions_of_interest": [
+                    r.to_dict() if isinstance(r, RegionOfInterest) else r for r in rois
+                ]
+            },
+            "findings": self.findings,
+            "classification": self.classification,
+            "confidence": round(self.confidence, 4),
             "final_recommendation": self.final_recommendation,
             "next_steps": self.next_steps,
             "token_usage": self.token_usage.to_dict(),
+            "generated_radiology_reference": self.generated_radiology_reference.to_dict(),
         }
