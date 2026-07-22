@@ -38,9 +38,9 @@ El costo de esa brecha se puede medir. El estadio al momento del diagnóstico es
 
 ## 2. Arquitectura
 
-La decisión de diseño central es separar la lógica que tiene consecuencia clínica de la generación de texto. Las hipótesis, las probabilidades y la recomendación se resuelven por completo con código determinístico antes de cualquier llamada al modelo generativo. El modelo de lenguaje entra solamente para redactar los textos sobre valores que ya están cerrados, y no puede modificar un `gt_id`, una probabilidad ni una recomendación.
+La idea principal del diseño es separar dos cosas: por un lado, todo lo que tiene un impacto clínico real, como las hipótesis, las probabilidades y la recomendación final, y por otro lado, la redacción del texto que explica esos resultados. Todo lo que importa clínicamente se calcula primero, con reglas fijas y predecibles, sin que intervenga el modelo de lenguaje. Recién después, cuando esos valores ya están definidos y cerrados, entra el modelo de lenguaje, pero solo para redactar el texto de forma más clara y legible. El modelo no puede cambiar ni inventar un diagnóstico, una probabilidad o una recomendación, porque eso ya viene decidido de antes.
 
-Esa separación responde a dos necesidades del dominio. La primera es la auditabilidad: cualquier hipótesis que el sistema propone se puede justificar enumerando la evidencia que la sostiene. La segunda es acotar el riesgo de alucinación, que queda confinado a los textos explicativos y nunca toca las decisiones.
+Esto se hace por dos motivos. El primero es poder auditar y confiar en el sistema: cualquier hipótesis que se proponga se puede justificar mostrando la evidencia concreta que la respalda, sin depender de lo que haya "dicho la IA". El segundo es reducir el riesgo de que la IA invente cosas, lo que se conoce como alucinación: como el modelo de lenguaje solo redacta texto explicativo y no toca los números ni las decisiones, si llegara a inventar algo, quedaría limitado a la forma en que se cuenta el resultado, y nunca afectaría el resultado en sí.
 
 ```mermaid
 flowchart TD
@@ -59,9 +59,11 @@ flowchart TD
 
 ### Recuperación de hipótesis
 
-La recuperación no usa embeddings. Puntúa seis señales clínicas por separado (síntomas, hallazgos, factores de riesgo, antecedentes de imagen, especificidad anatómica y biomarcadores), y cada una la pondera por la especificidad de sus términos dentro de la base mediante IDF. La elección prioriza la trazabilidad por sobre la capacidad semántica: cada coincidencia se puede explicar término por término, y en un dominio donde hay que justificar cada sugerencia eso pesa más que la mejora marginal que daría un modelo de embeddings.
+La búsqueda no usa técnicas de inteligencia artificial que "entienden" el significado de las palabras. En cambio, compara seis tipos de información clínica por separado (síntomas, hallazgos, factores de riesgo, estudios de imagen previos, la zona del cuerpo afectada y biomarcadores), y le da más importancia a las palabras que son poco comunes y más específicas, y menos importancia a las palabras genéricas que aparecen en casi todos los casos.
 
-Dos piezas del scoring merecen una mención. La **especificidad anatómica** corrige la confusión sistemática entre entidades de órganos vecinos: dos condiciones pueden compartir vocabulario genérico ("masa", "dolor", "pérdida de peso") y distinguirse solo por el órgano comprometido. La **suficiencia de información** atenúa la relevancia en casos descriptos con muy pocos términos, donde una única coincidencia produciría cobertura total sin evidencia real detrás.
+Se eligió este método porque permite explicar exactamente por qué el sistema encontró cada coincidencia, palabra por palabra. En un área donde cada sugerencia tiene que poder justificarse, eso es más importante que ganar un poco más de precisión usando un método de IA más "inteligente" pero menos transparente.
+
+Hay dos detalles que vale la pena aclarar. Primero, tener en cuenta la zona del cuerpo afectada ayuda a no confundir condiciones de órganos vecinos: dos enfermedades distintas pueden compartir palabras comunes como "masa", "dolor" o "pérdida de peso", y la única forma de distinguirlas es fijándose en qué órgano está comprometido. Segundo, cuando un caso está descripto con muy pocas palabras, el sistema baja un poco la confianza en el resultado, porque una sola coincidencia podría hacer parecer que hay más evidencia de la que realmente hay.
 
 Además, una hipótesis solo se propone si puede enumerar la evidencia que la sostiene. Las candidatas sin evidencia explícita se descartan aunque superen el umbral numérico.
 
