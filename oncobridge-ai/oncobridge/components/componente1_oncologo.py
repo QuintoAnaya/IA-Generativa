@@ -86,9 +86,9 @@ def _build_radiologist_instructions(entry: GroundTruthEntry) -> RadiologistInstr
 
 def _summary_text(patient: PatientInput) -> str:
     demo = patient.demographics
-    symptoms = "; ".join(patient.current_symptoms[:3]) or "sin sintomas consignados"
+    symptoms = "; ".join(patient.current_symptoms[:3]) or "sin síntomas consignados"
     return (
-        f"Paciente {patient.patient_id}, {demo.get('age', 'edad no consignada')} anios, "
+        f"Paciente {patient.patient_id}, {demo.get('age', 'edad no consignada')} años, "
         f"sexo {demo.get('sex', 'no consignado')}. Motivo de consulta: {symptoms}."
     )
 
@@ -96,17 +96,17 @@ def _summary_text(patient: PatientInput) -> str:
 def _reasoning_text(conclusive: bool, n_matches: int, imaging_prob: float, recommendation: str) -> str:
     if not conclusive:
         return (
-            "No se recupero ninguna hipotesis de la base de conocimiento con evidencia "
-            "suficiente para sostenerla. El resultado no indica una falla del analisis: "
+            "No se recuperó ninguna hipótesis de la base de conocimiento con evidencia "
+            "suficiente para sostenerla. El resultado no indica una falla del análisis: "
             "significa que los datos aportados no orientan a ninguna de las condiciones "
-            "cubiertas por la base. Corresponde evaluacion clinica profesional si los "
-            "sintomas persisten o aparecen signos de alarma."
+            "cubiertas por la base. Corresponde evaluación clínica profesional si los "
+            "síntomas persisten o aparecen signos de alarma."
         )
     return (
-        f"Se recuperaron {n_matches} hipotesis compatibles, ordenadas por la evidencia "
-        f"clinica que las sostiene. La probabilidad de requerir diagnostico por imagenes "
-        f"resulto {imaging_prob:.2f}, lo que determina la recomendacion {recommendation}. "
-        "El resultado se emite para revision profesional y no constituye un diagnostico."
+        f"Se recuperaron {n_matches} hipótesis compatibles, ordenadas por la evidencia "
+        f"clínica que las sostiene. La probabilidad de requerir diagnóstico por imágenes "
+        f"resultó {imaging_prob:.2f}, lo que determina la recomendación {recommendation}. "
+        "El resultado se emite para revisión profesional y no constituye un diagnóstico."
     )
 
 
