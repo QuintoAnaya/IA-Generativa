@@ -177,6 +177,11 @@ else:
                 out = st.session_state["c2"]
                 st.divider()
 
+                # La guia de lectura (modalidades, zonas, notas) proviene de las
+                # instrucciones para el radiologo que ya emitio el Componente 1.
+                guide = top["radiologist_instructions"]
+                location = guide["imaging_location"]
+
                 col_img, col_guide = st.columns([1, 1.3])
                 with col_img:
                     ref = out["generated_radiology_reference"]
@@ -185,21 +190,42 @@ else:
                     st.caption(ref["limitation"])
 
                 with col_guide:
-                    guide = out["reading_guide"]
-                    st.markdown("**Hallazgos esperados**")
-                    st.write(out["expected_findings"])
+                    st.markdown("**Hallazgos esperados / observados**")
+                    st.write(out["findings"])
+
+                    st.markdown("**Clasificacion**")
+                    st.write(out["classification"].replace("_", " "))
+
                     st.markdown("**Modalidad sugerida**")
                     st.write(", ".join(guide["suggested_modalities"]) or "no especificada")
+
                     if guide.get("views_recommended"):
                         st.markdown("**Proyecciones recomendadas**")
                         for v in guide["views_recommended"]:
                             st.write(f"- {v}")
+
                     st.markdown("**Zonas prioritarias**")
-                    for zone in guide["priority_zones"]:
+                    for zone in location["priority_zones"]:
                         st.write(f"- {zone}")
-                    if guide.get("positioning_notes"):
+
+                    if location.get("positioning_notes"):
                         st.markdown("**Notas de adquisicion**")
-                        st.write(guide["positioning_notes"])
+                        st.write(location["positioning_notes"])
+
+                # Region de interes del contrato (segmentation)
+                rois = out["segmentation"]["regions_of_interest"]
+                if rois:
+                    st.markdown("#### Region de interes")
+                    for roi in rois:
+                        size = roi["size_mm"]
+                        size_txt = f"{size} mm" if size is not None else "sin medicion sobre imagen"
+                        fuente = "referencia de la base" if roi.get("measurement_source") == "referencia_ground_truth" else "imagen del paciente"
+                        st.write(
+                            f"- **{roi['location']}** — tamaño: {size_txt} ({fuente}); "
+                            f"forma: {roi['shape'].replace('_', ' ')}; "
+                            f"margenes: {roi['margins'].replace('_', ' ')}; "
+                            f"densidad: {roi['density'].replace('_', ' ')}"
+                        )
 
                 st.markdown("#### Indicacion")
                 st.write(out["final_recommendation"])
