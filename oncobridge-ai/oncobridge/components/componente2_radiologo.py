@@ -1,31 +1,3 @@
-"""
-Componente 2 - Asistencia radiologica (perfil radiologo).
-
-El contrato del sistema (seccion 4.3 del enunciado) define que este componente
-recibe el output del Componente 1 junto con el estudio de imagen del paciente y
-produce un informe estructurado con regiones de interes, hallazgos, clasificacion
-y recomendacion.
-
-El dataset entregado es exclusivamente clinico: no incluye estudios de imagen de
-los pacientes. El componente contempla las dos situaciones:
-
-  1. Si el input trae una imagen real (`imaging_study.image_path` existente), se
-     usa como base del informe. Esta rama queda implementada para respetar el
-     contrato, aunque el dataset actual no ejerce este camino.
-
-  2. Si no hay imagen del paciente (caso del dataset actual), el componente
-     construye el informe a partir de la hipotesis principal del Componente 1 y
-     genera una referencia visual sintetica del patron que el radiologo deberia
-     esperar. En esta situacion, los hallazgos y la medicion no son
-     observaciones sobre el paciente: son el patron de referencia que documenta
-     la propia entrada de ground truth. El informe lo indica de forma explicita
-     en cada campo afectado, para no presentar como medido algo que es esperado.
-
-En ningun caso el componente inventa hallazgos: todo lo que afirma proviene de la
-imagen real (cuando existe) o del campo `expected_imaging_findings` de la entrada
-de ground truth (cuando no existe).
-"""
-
 from __future__ import annotations
 
 import re
@@ -66,15 +38,6 @@ def _empty_output(patient_id: str) -> Component2Output:
 
 
 def _reference_size_mm(expected_findings_text: str):
-    """Extrae un tamano de referencia en milimetros del texto de hallazgos
-    esperados de la entrada de ground truth.
-
-    El texto describe el tamano tipico de la lesion en lenguaje clinico
-    ("masa > 4-6 cm", "nodulo < 3 cm", "lesion de 8 mm"). Se toma el primer
-    valor numerico con unidad y se normaliza a milimetros. Cuando hay un rango
-    ("4-6 cm") se toma el extremo inferior, por ser el criterio mas conservador.
-    Si el texto no aporta ningun tamano, devuelve None.
-    """
     if not expected_findings_text:
         return None
     text = expected_findings_text.lower()
@@ -93,16 +56,6 @@ def _reference_size_mm(expected_findings_text: str):
 
 
 def _region_from_real_image(entry, location, image_path, llm):
-    """Construye la region de interes a partir de una imagen real del paciente.
-
-    Rama prevista por el contrato para cuando el input trae un estudio. El
-    dataset actual no ejerce este camino; se deja la estructura lista y con la
-    medicion marcada como proveniente de imagen real.
-    """
-    # Un analisis de segmentacion real requeriria un modelo de vision entrenado
-    # sobre imagen medica anotada, fuera del alcance de este prototipo. Se deja
-    # la region con la localizacion de la guia y sin medicion automatica, para
-    # no reportar como medido algo que no se midio.
     return RegionOfInterest(
         id="ROI-01",
         location=location.anatomical_landmarks or location.body_region,
@@ -131,16 +84,12 @@ def run_component2(c1_output: Component1Output, kb: KnowledgeBase, llm: GeminiCl
         "La base de conocimiento no especifica hallazgos esperados para esta entrada.",
     )
 
-    # Se busca primero una imagen real del paciente. El dataset actual no la trae,
-    # de modo que en la practica se toma la segunda rama.
     has_real_image = bool(
         imaging_study
         and imaging_study.get("image_path")
         and Path(imaging_study["image_path"]).exists()
     )
 
-    # Siempre se genera la referencia visual sintetica del patron esperado, que
-    # acompana al informe como material orientativo.
     reference_meta = generate_reference(
         prompt=instructions.meddiffusion_reference_prompt or entry.icd_10_description,
         negative_prompt=instructions.meddiffusion_negative_prompt,
