@@ -29,10 +29,14 @@ class OncoBridgePipeline:
     def run_component1(self, patient_dict: dict) -> dict:
         return run_component1(PatientInput.from_dict(patient_dict), self.kb, self.llm).to_dict()
 
-    def run_component2(self, component1_output_dict: dict, device: str = "auto",
+    def run_component2(self, component1_output_dict: dict, imaging_study: dict = None,
+                       device: str = "auto",
                        output_dir: str = "output/generated_references") -> dict:
         c1 = _rebuild_component1_output(component1_output_dict)
-        return run_component2(c1, self.kb, self.llm, output_dir=output_dir, device=device).to_dict()
+        return run_component2(
+            c1, self.kb, self.llm, imaging_study=imaging_study,
+            output_dir=output_dir, device=device,
+        ).to_dict()
 
     def run_end_to_end(self, patient_dict: dict, device: str = "auto") -> dict:
         c1 = self.run_component1(patient_dict)
