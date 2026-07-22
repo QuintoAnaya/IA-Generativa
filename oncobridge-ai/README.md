@@ -1,42 +1,46 @@
 # OncoBridge AI
 
-Sistema de apoyo a la decision oncologica desarrollado como Trabajo Final de IA Generativa para Datos Biomedicos, Universidad Austral.
+Sistema de apoyo a la decisión oncológica desarrollado como Trabajo Final de IA Generativa para Datos Biomédicos, Universidad Austral.
 
 **Integrantes:** Fausto Paredes y Emerio Quinto Tenreyro Anaya
 
-El sistema conecta dos perfiles profesionales sobre una misma base de conocimiento oncologico:
+El sistema conecta dos perfiles profesionales sobre una misma base de conocimiento oncológico:
 
-- **Componente 1 (oncologo).** Recupera del ground truth las hipotesis compatibles con el caso, estima la probabilidad de requerir diagnostico por imagenes y emite una recomendacion de derivacion.
-- **Componente 2 (radiologo).** Traduce la hipotesis principal en una guia de lectura y una referencia visual sintetica del patron que se espera encontrar en el estudio.
+- **Componente 1 (oncólogo).** Recupera del ground truth las hipótesis compatibles con el caso, estima la probabilidad de requerir diagnóstico por imágenes y emite una recomendación de derivación.
+- **Componente 2 (radiólogo).** A partir de la hipótesis principal arma el informe orientado a la lectura del estudio, con las regiones de interés esperadas y una referencia visual del patrón que debería encontrarse.
+
+Es un prototipo académico sobre datos sintéticos. No está validado para uso clínico ni reemplaza el juicio profesional.
+
 ---
 
-## Indice
+## Índice
 
 1. [Problema](#1-problema)
 2. [Arquitectura](#2-arquitectura)
-3. [Formula de imaging_needed_probability](#3-formula-de-imaging_needed_probability)
+3. [Fórmula de imaging_needed_probability](#3-fórmula-de-imaging_needed_probability)
 4. [Eficiencia de contexto](#4-eficiencia-de-contexto)
-5. [Metodologia de evaluacion](#5-metodologia-de-evaluacion)
+5. [Metodología de evaluación](#5-metodología-de-evaluación)
 6. [Resultados](#6-resultados)
-7. [Guia de ejecucion](#7-guia-de-ejecucion)
+7. [Guía de ejecución](#7-guía-de-ejecución)
 8. [Interfaz](#8-interfaz)
-9. [Privacidad y puesta en produccion](#9-privacidad-y-puesta-en-produccion)
-10. [Limitaciones y trabajo futuro](#10-limitaciones-y-trabajo-futuro)
-11. [Estructura del repositorio](#11-estructura-del-repositorio)
+9. [Componente 2 y el contrato de salida](#9-componente-2-y-el-contrato-de-salida)
+10. [Privacidad y puesta en producción](#10-privacidad-y-puesta-en-producción)
+11. [Limitaciones y trabajo futuro](#11-limitaciones-y-trabajo-futuro)
+12. [Estructura del repositorio](#12-estructura-del-repositorio)
 
 ---
 
 ## 1. Problema
 
-OncoBridge dispone de una base de conocimiento oncologico curada que ningun profesional puede revisar de forma exhaustiva durante una consulta. El conocimiento existe pero no llega al momento de la decision: el oncologo dispone de minutos por paciente y el radiologo suele recibir el estudio sin la pregunta clinica que motivo la derivacion.
+OncoBridge tiene una base de conocimiento oncológico curada que ningún profesional puede revisar entera durante una consulta. El conocimiento está, pero no llega al momento en que se decide: el oncólogo tiene minutos por paciente, y el radiólogo suele recibir el estudio sin la pregunta clínica que motivó la derivación.
 
-El costo de esa brecha es medible. El estadio al momento del diagnostico es el predictor mas fuerte de sobrevida en la mayoria de los tumores solidos, y cada mes de demora en iniciar tratamiento se asocia a un incremento del riesgo de mortalidad. El sistema no intenta diagnosticar: intenta que la informacion correcta este disponible en el momento en que se decide si un paciente necesita o no un estudio por imagenes.
+El costo de esa brecha se puede medir. El estadio al momento del diagnóstico es el predictor más fuerte de sobrevida en la mayoría de los tumores sólidos, y cada mes de demora en iniciar tratamiento se asocia a un aumento del riesgo de mortalidad. El sistema no intenta diagnosticar: intenta que la información correcta esté disponible en el momento en que se decide si un paciente necesita o no un estudio por imágenes.
 
 ## 2. Arquitectura
 
-La decisión de diseño central es la separación entre la lógica con consecuencia clínica y la generación de lenguaje natural. Las hipotesis, las probabilidades y la recomendación se resuelven por completo mediante codigo deterministico antes de cualquier llamada al modelo generativo. El modelo de lenguaje interviene unicamente para redactar los textos sobre valores ya cerrados, y no tiene capacidad de modificar un `gt_id`, una probabilidad ni una recomendacion.
+La decisión de diseño central es separar la lógica que tiene consecuencia clínica de la generación de texto. Las hipótesis, las probabilidades y la recomendación se resuelven por completo con código determinístico antes de cualquier llamada al modelo generativo. El modelo de lenguaje entra solamente para redactar los textos sobre valores que ya están cerrados, y no puede modificar un `gt_id`, una probabilidad ni una recomendación.
 
-Esta separacion responde a dos requisitos del dominio. El primero es la auditabilidad: toda hipotesis que el sistema propone puede justificarse enumerando la evidencia que la sostiene. El segundo es el control del riesgo de alucinacion, que se concentra asi en los textos explicativos y no en las decisiones.
+Esa separación responde a dos necesidades del dominio. La primera es la auditabilidad: cualquier hipótesis que el sistema propone se puede justificar enumerando la evidencia que la sostiene. La segunda es acotar el riesgo de alucinación, que queda confinado a los textos explicativos y nunca toca las decisiones.
 
 ```mermaid
 flowchart TD
@@ -44,26 +48,26 @@ flowchart TD
     B --> C{"Evidencia suficiente?"}
     C -- No --> D["SIN ELEMENTOS PARA EVALUAR"]
     C -- Si --> E["Calibracion de match_probability"]
-    E --> F["Cálculo de la probabilidad de necesitar imagen"]
+    E --> F["Calculo de la probabilidad de necesitar imagen"]
     F --> G["Reglas de decision:<br/>recommendation y urgency"]
     G --> H["Modelo de lenguaje:<br/>redaccion unicamente"]
     H --> I["Salida Componente 1"]
-    I --> J["Componente 2:<br/>guia de lectura"]
+    I --> J["Componente 2:<br/>informe orientado"]
     J --> K["Difusion local:<br/>referencia visual sintetica"]
     K --> L["Salida Componente 2"]
 ```
 
-### Recuperacion de hipotesis
+### Recuperación de hipótesis
 
-La recuperacion no utiliza embeddings. Puntua seis senales clinicas por separado (sintomas, hallazgos, factores de riesgo, antecedentes de imagen, especificidad anatomica y biomarcadores), cada una ponderada por la especificidad de los terminos dentro de la base mediante IDF. La eleccion prioriza la trazabilidad sobre la capacidad semantica: cada coincidencia es explicable termino por termino, lo que en un dominio donde se exige justificar cada sugerencia pesa mas que la mejora marginal que aportaria un modelo de embeddings.
+La recuperación no usa embeddings. Puntúa seis señales clínicas por separado (síntomas, hallazgos, factores de riesgo, antecedentes de imagen, especificidad anatómica y biomarcadores), y cada una la pondera por la especificidad de sus términos dentro de la base mediante IDF. La elección prioriza la trazabilidad por sobre la capacidad semántica: cada coincidencia se puede explicar término por término, y en un dominio donde hay que justificar cada sugerencia eso pesa más que la mejora marginal que daría un modelo de embeddings.
 
-Dos componentes del scoring merecen mencion. La **especificidad anatomica** corrige la confusion sistematica entre entidades de organos vecinos: dos condiciones pueden compartir vocabulario generico ("masa", "dolor", "perdida de peso") y distinguirse solo por el organo comprometido. La **suficiencia de informacion** atenua la relevancia en casos descriptos con muy pocos terminos, donde una unica coincidencia produciria cobertura total sin evidencia real detras.
+Dos piezas del scoring merecen una mención. La **especificidad anatómica** corrige la confusión sistemática entre entidades de órganos vecinos: dos condiciones pueden compartir vocabulario genérico ("masa", "dolor", "pérdida de peso") y distinguirse solo por el órgano comprometido. La **suficiencia de información** atenúa la relevancia en casos descriptos con muy pocos términos, donde una única coincidencia produciría cobertura total sin evidencia real detrás.
 
-Ademas, una hipotesis solo se propone si puede enumerar la evidencia que la sostiene. Las candidatas sin evidencia explicita se descartan aunque superen el umbral numerico.
+Además, una hipótesis solo se propone si puede enumerar la evidencia que la sostiene. Las candidatas sin evidencia explícita se descartan aunque superen el umbral numérico.
 
-## 3. Formula de imaging_needed_probability
+## 3. Fórmula de imaging_needed_probability
 
-El valor no lo estima el modelo de lenguaje. Se calcula con la funcion definida en `oncobridge/components/scoring.py`:
+El valor no lo estima el modelo de lenguaje. Se calcula con la función definida en `oncobridge/components/scoring.py`:
 
 ```
 peso_urgencia(u)   = 1.00 (alta) | 0.65 (media) | 0.35 (baja) | 0.00 (ninguna)
@@ -81,50 +85,50 @@ score_i = peso_malignidad * (0.60 * match_probability
 imaging_needed_probability = min(1, max(score_i) + boost_convergencia)
 ```
 
-`match_probability` recibe el mayor peso porque es la senal especifica al paciente concreto. `urgency_level` corrige segun la gravedad de la condicion en abstracto, y `base_probability` aporta la prevalencia a priori con el peso menor, para que el prior no domine sobre la evidencia del caso.
+`match_probability` recibe el mayor peso porque es la señal específica al paciente concreto. `urgency_level` corrige según la gravedad de la condición en abstracto, y `base_probability` aporta la prevalencia a priori con el peso menor, para que el prior no domine sobre la evidencia del caso.
 
-El `boost_convergencia` suma hasta 0.10 cuando varias hipotesis independientes coinciden en indicar estudio por imagenes, reproduciendo un criterio clinico real: la convergencia de diferenciales distintos sobre la misma conducta refuerza esa conducta, con independencia de cual resulte finalmente correcta.
+El `boost_convergencia` suma hasta 0.10 cuando varias hipótesis independientes coinciden en indicar estudio por imágenes. Reproduce un criterio clínico real: cuando distintos diagnósticos diferenciales apuntan a la misma conducta, esa conducta se refuerza, más allá de cuál termine siendo el correcto.
 
-El **peso de malignidad** se incorporo despues de observar en la primera evaluacion una especificidad de 0.156. El sistema derivaba practicamente cualquier hipotesis con urgencia media o alta, incluyendo diferenciales benignos tipicos. El factor reproduce una asimetria real de la practica: el umbral para solicitar un estudio es mas bajo ante sospecha de malignidad que ante una condicion benigna habitual. Se implementa por capitulo de la clasificacion ICD-10 y no por entrada individual, de modo que se aplica de forma uniforme a cualquier entrada que se agregue a la base.
+El **peso de malignidad** lo incorporamos después de ver en la primera evaluación una especificidad de 0.156. El sistema derivaba prácticamente cualquier hipótesis con urgencia media o alta, incluyendo diferenciales benignos típicos. El factor refleja una asimetría real de la práctica: el umbral para pedir un estudio es más bajo ante sospecha de malignidad que ante una condición benigna habitual. Se aplica por capítulo de la clasificación ICD-10 y no por entrada individual, así vale igual para cualquier entrada que se agregue a la base.
 
 ## 4. Eficiencia de contexto
 
-La restriccion planteada es que el modelo corporativo tiene contexto limitado y la base puede escalar a cientos o miles de entradas. La estrategia opera en tres niveles:
+La restricción es que el modelo corporativo tiene contexto limitado y la base puede crecer a cientos o miles de entradas. La estrategia trabaja en tres niveles:
 
-1. **La recuperacion no consume contexto.** El scoring de la base completa se resuelve en CPU. Su costo es lineal en la cantidad de entradas y no interviene el modelo de lenguaje.
-2. **Compresion antes de la generacion.** De las entradas que superan el umbral de candidatura (`retrieved_gt_entries`), solo las cinco de mayor relevancia alcanzan el contexto del modelo (`gt_entries_in_context`). En la particion de prueba esto representa una compresion promedio del 51 por ciento.
-3. **El modelo nunca recibe la base completa,** ni siquiera las 30 entradas actuales, sino unicamente el subconjunto ya filtrado.
+1. **La recuperación no consume contexto.** El scoring de la base completa se resuelve en CPU. Su costo es lineal en la cantidad de entradas y no interviene el modelo de lenguaje.
+2. **Compresión antes de la generación.** De las entradas que superan el umbral de candidatura (`retrieved_gt_entries`), solo las cinco de mayor relevancia llegan al contexto del modelo (`gt_entries_in_context`). En la partición de prueba esto representa una compresión promedio del 51 por ciento.
+3. **El modelo nunca recibe la base completa,** ni siquiera las 30 entradas actuales, sino únicamente el subconjunto ya filtrado.
 
 El campo `token_usage` reporta ambas cantidades en cada respuesta, lo que permite auditar la eficiencia caso por caso.
 
-## 5. Metodologia de evaluacion
+## 5. Metodología de evaluación
 
-El dataset se particiona en 70 por ciento para calibracion y 30 por ciento para medicion final, de forma estratificada por categoria (TP, TN, FP, FN, COMPLEX) y con semilla fija para garantizar reproducibilidad. Resultan 76 casos de entrenamiento y 34 de prueba.
+El dataset se parte en 70 por ciento para calibración y 30 por ciento para la medición final, de forma estratificada por categoría (TP, TN, FP, FN, COMPLEX) y con semilla fija para que sea reproducible. Quedan 76 casos de entrenamiento y 34 de prueba.
 
-Los tres umbrales que determinan la recomendacion se calibran mediante busqueda en grilla **exclusivamente sobre la particion de entrenamiento**. La funcion objetivo pondera en partes iguales accuracy de derivacion, sensibilidad y especificidad, sujeta a una restriccion de sensibilidad minima de 0.85. La restriccion responde a criterio clinico y no estadistico: no derivar a un paciente con lesion tiene consecuencias mayores que derivar a uno sin ella, de modo que no se aceptan configuraciones que compren especificidad por debajo de ese piso de sensibilidad.
+Los tres umbrales que determinan la recomendación se calibran mediante búsqueda en grilla **solo sobre la partición de entrenamiento**. La función objetivo pondera en partes iguales accuracy de derivación, sensibilidad y especificidad, sujeta a una restricción de sensibilidad mínima de 0.85. Esa restricción es clínica y no estadística: no derivar a un paciente con lesión tiene consecuencias mayores que derivar a uno sin ella, así que no se aceptan configuraciones que compren especificidad por debajo de ese piso de sensibilidad.
 
-La particion de prueba no interviene en ningun punto de la calibracion. Los umbrales seleccionados se guardan junto con una huella criptografica del contenido de la base de conocimiento, lo que impide reutilizar por error una calibracion obtenida sobre otra version del ground truth.
+La partición de prueba no interviene en ningún punto de la calibración. Los umbrales elegidos se guardan junto con una huella criptográfica del contenido de la base de conocimiento, lo que impide reutilizar por error una calibración obtenida sobre otra versión del ground truth.
 
 ## 6. Resultados
 
-Medicion sobre la particion de prueba (34 casos no vistos durante la calibracion), en `artifacts/resultados_test.json`:
+Medición sobre la partición de prueba (34 casos no vistos durante la calibración), en `artifacts/resultados_test.json`:
 
-| Metrica | Train (76) | **Test (34)** |
+| Métrica | Train (76) | **Test (34)** |
 |---|---:|---:|
-| Accuracy de derivacion | 0.776 | **0.765** |
+| Accuracy de derivación | 0.776 | **0.765** |
 | Sensibilidad | 0.925 | **0.800** |
 | Especificidad | 0.652 | **0.778** |
-| Precision de GT principal | 0.742 | **0.852** |
+| Precisión de GT principal | 0.742 | **0.852** |
 | Accuracy de conclusive | 0.947 | **0.882** |
 | Concordancia de urgencia | 0.673 | **0.591** |
 | Tokens promedio por caso | 287 | **287** |
-| Compresion de contexto | 55% | **51%** |
+| Compresión de contexto | 55% | **51%** |
 
-Matriz de confusion en test para la decision de derivar: 20 verdaderos positivos, 5 falsos negativos, 7 verdaderos negativos, 2 falsos positivos.
+Matriz de confusión en test para la decisión de derivar: 20 verdaderos positivos, 5 falsos negativos, 7 verdaderos negativos, 2 falsos positivos.
 
-Desempeno por categoria en test:
+Desempeño por categoría en test:
 
-| Categoria | n | Accuracy |
+| Categoría | n | Accuracy |
 |---|---:|---:|
 | COMPLEX | 6 | 1.000 |
 | FN (casos sutiles) | 5 | 1.000 |
@@ -134,33 +138,33 @@ Desempeno por categoria en test:
 
 ### Lectura de los resultados
 
-El sistema resuelve correctamente la totalidad de los casos sutiles y de los casos con historial extenso, que son los dos grupos disenados para exigir integracion de informacion dispersa. El desempeno mas debil se concentra en los casos borderline, donde acierta 2 de 5: son precisamente los casos donde la presentacion clinica es compatible con una hipotesis oncologica pero el contexto indica que no corresponde derivar, y distinguirlos requiere una comprension del cuadro que una recuperacion basada en terminos no alcanza.
+El sistema resuelve bien la totalidad de los casos sutiles y de los casos con historial extenso, que son los dos grupos pensados para exigir integración de información dispersa. Donde flaquea es en los casos borderline, con 2 de 5: son justamente los casos donde la presentación clínica es compatible con una hipótesis oncológica pero el contexto indica que no corresponde derivar, y distinguirlos pide una comprensión del cuadro que una recuperación basada en términos no alcanza.
 
-La caida de sensibilidad entre train y test (0.925 a 0.800) es la brecha de generalizacion que la particion permite observar. Reportarla sin la separacion habria producido un numero mas favorable pero no representativo del comportamiento sobre casos nuevos.
+La caída de sensibilidad entre train y test (0.925 a 0.800) es la brecha de generalización que la partición permite ver. Reportarla sin esa separación habría dado un número más favorable pero no representativo del comportamiento sobre casos nuevos.
 
-La correlacion de calibracion es baja (0.118 en test), lo que indica que las probabilidades de coincidencia ordenan razonablemente las hipotesis pero no estan calibradas como probabilidades en sentido estricto. Deben interpretarse como puntajes de ranking y no como estimaciones de riesgo clinico.
+La correlación de calibración es baja (0.118 en test), lo que indica que las probabilidades de coincidencia ordenan razonablemente las hipótesis pero no están calibradas como probabilidades en sentido estricto. Hay que interpretarlas como puntajes de ranking y no como estimaciones de riesgo clínico.
 
-## 7. Guia de ejecucion
+## 7. Guía de ejecución
 
-Requiere Python 3.10 o superior. Todos los comandos se ejecutan desde la raiz del repositorio.
+Requiere Python 3.10 o superior. Todos los comandos se ejecutan desde la raíz del repositorio.
 
-### 7.1 Instalacion
+### 7.1 Instalación
 
 ```bash
 pip install -r requirements.txt
 ```
 
-El nucleo del sistema funciona sin dependencias externas. Los paquetes opcionales habilitan el modelo de lenguaje real, la interfaz web y la generacion de imagen por difusion.
+El núcleo del sistema funciona sin dependencias externas. Los paquetes opcionales habilitan el modelo de lenguaje real, la interfaz web y la generación de imagen por difusión.
 
-### 7.2 Configuracion de la clave de API
+### 7.2 Configuración de la clave de API
 
 ```bash
 cp .env.example .env
 ```
 
-Editar `.env` y completar `GEMINI_API_KEY` con una clave obtenida en https://aistudio.google.com/app/apikey. El archivo `.env` esta excluido por `.gitignore`; `.env.example` es la plantilla sin credenciales.
+Editar `.env` y completar `GEMINI_API_KEY` con una clave obtenida en https://aistudio.google.com/app/apikey. El archivo `.env` está excluido por `.gitignore`; `.env.example` es la plantilla sin credenciales.
 
-Sin clave configurada el sistema funciona igualmente: el cliente devuelve los textos de respaldo construidos a partir de los mismos datos estructurados, sin interrumpir el flujo.
+Sin clave configurada el sistema funciona igual: el cliente devuelve los textos de respaldo construidos a partir de los mismos datos estructurados, sin interrumpir el flujo.
 
 ### 7.3 Componente 1
 
@@ -170,9 +174,9 @@ python scripts/run_componente1.py --caso data/eval_dataset/clinical_cases/case_0
 python scripts/run_componente1.py --ejemplo neg
 ```
 
-La salida sigue el contrato definido: `matched_ground_truths` con la evidencia de cada hipotesis, `imaging_needed_probability`, `recommendation`, `urgency`, `conclusive` y `token_usage`.
+La salida sigue el contrato: `matched_ground_truths` con la evidencia de cada hipótesis, `imaging_needed_probability`, `recommendation`, `urgency`, `conclusive` y `token_usage`.
 
-### 7.4 Reproducir la evaluacion completa
+### 7.4 Reproducir la evaluación completa
 
 ```bash
 python scripts/split_dataset.py
@@ -181,19 +185,20 @@ python scripts/run_evaluacion.py --manifest data_splits/train_cases.json
 python scripts/run_evaluacion.py --manifest data_splits/test_cases.json
 ```
 
-El primer comando genera la particion reproducible, el segundo calibra sobre entrenamiento y el ultimo produce la medicion final sobre prueba. Sin el argumento `--manifest` la evaluacion recorre los 110 casos.
+El primer comando genera la partición reproducible, el segundo calibra sobre entrenamiento y el último produce la medición final sobre prueba. Sin el argumento `--manifest` la evaluación recorre los 110 casos.
 
-En modo de respaldo el ciclo completo demora menos de un minuto. Con el modelo de lenguaje activo el tiempo depende de la cuota de la API.
+En modo de respaldo el ciclo completo tarda menos de un minuto. Con el modelo de lenguaje activo el tiempo depende de la cuota de la API.
 
 ### 7.5 Componente 2
 
 ```bash
 python scripts/run_componente1.py > artifacts/c1.json
 python scripts/run_componente2.py --c1 artifacts/c1.json
+python scripts/run_componente2.py --c1 artifacts/c1.json --imagen studies/estudio.png
 python scripts/run_componente2.py --c1 artifacts/c1.json --device cuda
 ```
 
-La generacion de la referencia visual selecciona el mejor recurso disponible: GPU si `torch` detecta CUDA, CPU con menor cantidad de pasos si no hay GPU, y un esquema anatomico vectorial si `torch` y `diffusers` no estan instalados. El campo `limitation` de la salida indica siempre cual de los tres caminos se utilizo.
+Con `--imagen` se le puede pasar un estudio real del paciente; sin ese argumento (el caso del dataset, que no trae imágenes) el informe se arma sobre el patrón esperado de la hipótesis principal. La generación de la referencia visual elige el mejor recurso disponible: GPU si `torch` detecta CUDA, CPU con menos pasos si no hay GPU, y un esquema anatómico vectorial si `torch` y `diffusers` no están instalados. El campo `limitation` de la salida indica siempre cuál de los tres caminos se usó.
 
 ### 7.6 Flujo end-to-end
 
@@ -208,39 +213,52 @@ python scripts/run_pipeline.py --caso data/eval_dataset/clinical_cases/case_001/
 streamlit run interfaces/app_streamlit.py
 ```
 
-La interfaz presenta cada componente con el vocabulario del perfil correspondiente y sin exponer estructuras JSON. El Componente 1 recibe los datos mediante formularios y devuelve la recomendacion, la urgencia y las hipotesis con su evidencia. El Componente 2 muestra la guia de lectura junto a la referencia visual generada.
+La interfaz presenta cada componente con el vocabulario de su perfil y sin exponer estructuras JSON. El Componente 1 recibe los datos con formularios y devuelve la recomendación, la urgencia y las hipótesis con su evidencia. El Componente 2 muestra el informe orientado y la región de interés esperada junto a la referencia visual generada.
 
-La ejecucion del Componente 1 requiere una confirmacion explicita de que los datos ingresados no contienen informacion identificable, dado que pueden enviarse a un servicio externo.
+Correr el Componente 1 pide una confirmación explícita de que los datos ingresados no contienen información identificable, dado que pueden enviarse a un servicio externo.
 
-## 9. Privacidad y puesta en produccion
+## 9. Componente 2 y el contrato de salida
 
-Los datos utilizados son sinteticos. En un despliegue real, ningun dato identificable deberia integrar el contexto enviado al modelo: solo variables clinicas asociadas a un identificador interno no reversible.
+El contrato del sistema (sección 4.3 del enunciado) define que el Componente 2 recibe el output del Componente 1 junto con el estudio de imagen del paciente, y devuelve un informe con `segmentation.regions_of_interest`, `findings`, `classification`, `confidence`, `final_recommendation`, `next_steps` y `token_usage`. La salida del componente respeta esa estructura.
 
-Un despliegue productivo requeriria anonimizacion previa con verificacion automatica, cifrado en transito y en reposo, control de acceso por rol y perfil profesional, y registro de auditoria que vincule cada recomendacion emitida con la decision que efectivamente tomo el profesional. Los registros de las llamadas al modelo no deberian conservar el contexto clinico completo mas alla del plazo necesario, sino metricas agregadas de consumo y desempeno. El marco aplicable seria la Ley 26.529 en Argentina, y HIPAA o GDPR segun la jurisdiccion de los pacientes atendidos.
+El dataset entregado es exclusivamente clínico y no incluye estudios de imagen de los pacientes, de modo que hay que aclarar cómo se completa cada campo:
 
-En cuanto a infraestructura, los componentes escalan de forma distinta: el segundo requiere GPU cuando se utiliza generacion por difusion y el primero no, lo que justifica desplegarlos como servicios separados. El monitoreo deberia seguir la tasa de casos no conclusivos y la tasa de derivacion, cuya desviacion respecto del comportamiento historico es el indicador temprano de que la recuperacion dejo de funcionar correctamente, tipicamente tras una actualizacion de la base de conocimiento.
+- Si el input trae una imagen real (`--imagen` en el script, `image_path` en el JSON), esa imagen es la base del informe. La rama queda implementada para respetar el contrato, aunque el dataset actual no la ejerce.
+- Si no hay imagen (el caso del dataset), el informe se arma a partir de la hipótesis principal. En esta situación, `findings` describe el patrón esperado según la entrada de ground truth, no una observación sobre el paciente, y lo dice de forma explícita.
 
-La validacion previa al uso clinico exigiria una evaluacion retrospectiva sobre casos reales revisada por especialistas y un periodo de operacion en sombra, con el sistema emitiendo recomendaciones que no se muestran al profesional, para medir concordancia sin exponer a los pacientes. El sistema ya degrada de forma controlada ante la caida del modelo de lenguaje o del generador de imagen, lo que evita que una falla externa bloquee la consulta.
+El campo `size_mm` de cada región de interés merece una aclaración, porque el contrato lo pide como número. Ese número solo se puede medir sobre una imagen real. Cuando no hay imagen, el componente toma el tamaño típico esperado que la propia entrada de ground truth documenta para esa lesión (por ejemplo, una masa descripta como "> 4-6 cm" se reporta como 40 mm), y marca la región con `measurement_source: "referencia_ground_truth"` para dejar claro que es un valor de referencia y no una medición del paciente. Si la base no aporta ningún tamaño, el campo queda en `null`. En ningún caso se inventa una medición.
 
-## 10. Limitaciones y trabajo futuro
+El bloque `generated_radiology_reference` que acompaña a la salida no forma parte del contrato mínimo: lo agregamos como material de trazabilidad, para registrar con qué modelo, dispositivo y prompt se generó la referencia visual, y su limitación.
 
-**Casos borderline.** El desempeno cae a 0.400 en la categoria disenada para exigir descartar una sospecha oncologica plausible. Distinguir esos casos requiere comprension del contexto clinico que una recuperacion basada en terminos no provee.
+## 10. Privacidad y puesta en producción
 
-**Calibracion de probabilidades.** La correlacion entre `match_probability` y el acierto es baja. Los valores ordenan hipotesis pero no constituyen estimaciones de riesgo, y no deberian presentarse como tales a un profesional.
+Los datos usados son sintéticos. En un despliegue real, ningún dato identificable debería integrar el contexto que se envía al modelo: solo variables clínicas asociadas a un identificador interno no reversible.
 
-**Biomarcadores.** Solo se contabilizan como evidencia cuando la entrada del ground truth expresa un umbral numerico verificable. Las descripciones cualitativas del dataset ("elevada", "variable") se descartan. Es una decision conservadora: aceptarlas hacia que cualquier laboratorio cargado sumara evidencia a favor de multiples entradas que comparten marcadores inespecificos como LDH o VSG.
+Un despliegue productivo pediría anonimización previa con verificación automática, cifrado en tránsito y en reposo, control de acceso por rol y perfil profesional, y un registro de auditoría que vincule cada recomendación emitida con la decisión que efectivamente tomó el profesional. Los registros de las llamadas al modelo no deberían conservar el contexto clínico completo más allá de lo necesario, sino métricas agregadas de consumo y desempeño. El marco aplicable sería la Ley 26.529 en Argentina, y HIPAA o GDPR según la jurisdicción de los pacientes atendidos.
 
-**Generacion de imagen.** El enunciado menciona 3D MedDiffusion, cuyo repositorio oficial declara un requerimiento minimo de 40 GB de VRAM para inferencia, hardware no disponible durante el desarrollo. Se utilizo Stable Diffusion 1.5, un modelo generalista que no fue entrenado sobre imagenes medicas anotadas: la salida ilustra el patron descripto pero no constituye una representacion radiologica fiel.
+En cuanto a infraestructura, los componentes escalan distinto: el segundo necesita GPU cuando se usa generación por difusión y el primero no, lo que justifica desplegarlos como servicios separados. El monitoreo debería seguir la tasa de casos no conclusivos y la tasa de derivación, cuya desviación respecto del comportamiento histórico es la señal temprana de que la recuperación dejó de funcionar bien, típicamente después de actualizar la base de conocimiento.
 
-**Alcance del Componente 2.** El componente genera una guia prospectiva y no analiza estudios reales. El dataset no incluye imagenes de los pacientes, y sin mascaras anotadas por especialistas no existiria forma de medir el desempeno de una deteccion sobre imagen real.
+La validación previa al uso clínico exigiría una evaluación retrospectiva sobre casos reales revisada por especialistas y un período de operación en sombra, con el sistema emitiendo recomendaciones que no se le muestran al profesional, para medir concordancia sin exponer a los pacientes. El sistema ya degrada de forma controlada ante la caída del modelo de lenguaje o del generador de imagen, lo que evita que una falla externa bloquee la consulta.
 
-**Tamano del ground truth.** Con 30 entradas, varias comparten sintomas y diferenciales. La recuperacion ordena por similitud y la calibracion ajusta umbrales, pero el sistema no entrena un modelo supervisado ni puede aprender patrones clinicos nuevos a partir de una cohorte de este tamano.
+## 11. Limitaciones y trabajo futuro
 
-**Poblaciones no cubiertas.** El dataset no contempla pediatria ni embarazo, y el sistema no fue evaluado sobre esas poblaciones.
+**Casos borderline.** El desempeño cae a 0.400 en la categoría pensada para exigir descartar una sospecha oncológica plausible. Distinguir esos casos pide una comprensión del contexto clínico que una recuperación basada en términos no provee.
 
-**Trabajo futuro.** Las prioridades son incorporar recuperacion semantica complementaria a la lexica para atacar los casos borderline, calibrar las probabilidades contra frecuencias observadas, y construir un conjunto multimodal con estudios reales anonimizados y anotados que permita evaluar deteccion sobre imagen con metricas apropiadas.
+**Calibración de probabilidades.** La correlación entre `match_probability` y el acierto es baja. Los valores ordenan hipótesis pero no son estimaciones de riesgo, y no deberían presentarse como tales a un profesional.
 
-## 11. Estructura del repositorio
+**Biomarcadores.** Solo cuentan como evidencia cuando la entrada del ground truth expresa un umbral numérico verificable. Las descripciones cualitativas del dataset ("elevada", "variable") se descartan. Es una decisión conservadora: aceptarlas hacía que cualquier laboratorio cargado sumara evidencia a favor de varias entradas que comparten marcadores inespecíficos como LDH o VSG.
+
+**Generación de imagen.** El enunciado menciona 3D MedDiffusion, cuyo repositorio oficial declara un mínimo de 40 GB de VRAM para inferencia, hardware que no tuvimos disponible durante el desarrollo. Usamos Stable Diffusion 1.5, un modelo generalista que no fue entrenado sobre imágenes médicas anotadas: la salida ilustra el patrón descripto pero no es una representación radiológica fiel.
+
+**Alcance del Componente 2.** El componente arma un informe orientado a la lectura y, cuando no hay imagen del paciente, trabaja sobre el patrón esperado. El dataset no incluye estudios de los pacientes, y sin máscaras anotadas por especialistas no habría forma de medir el desempeño de una detección sobre imagen real.
+
+**Tamaño del ground truth.** Con 30 entradas, varias comparten síntomas y diferenciales. La recuperación ordena por similitud y la calibración ajusta umbrales, pero el sistema no entrena un modelo supervisado ni puede aprender patrones clínicos nuevos a partir de una cohorte de este tamaño.
+
+**Poblaciones no cubiertas.** El dataset no contempla pediatría ni embarazo, y el sistema no fue evaluado sobre esas poblaciones.
+
+**Trabajo futuro.** Las prioridades son sumar recuperación semántica que complemente a la léxica para atacar los casos borderline, calibrar las probabilidades contra frecuencias observadas, y construir un conjunto multimodal con estudios reales anonimizados y anotados que permita evaluar detección sobre imagen con métricas apropiadas.
+
+## 12. Estructura del repositorio
 
 ```text
 oncobridge-ai/
@@ -275,4 +293,4 @@ oncobridge-ai/
 └── .gitignore
 ```
 
-Los directorios `output/` y `__pycache__/` se generan durante la ejecucion y estan excluidos del control de versiones.
+Los directorios `output/` y `__pycache__/` se generan durante la ejecución y están excluidos del control de versiones.
