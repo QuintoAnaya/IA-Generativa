@@ -1,5 +1,3 @@
-"""Orquestador end-to-end: Componente 1 seguido de Componente 2."""
-
 from __future__ import annotations
 
 import os
@@ -45,9 +43,6 @@ class OncoBridgePipeline:
 
 
 def _rebuild_component1_output(d: dict) -> Component1Output:
-    """Reconstruye el output tipado del Componente 1 desde un dict, para poder
-    encadenar los componentes tanto en memoria como a partir de un JSON en disco.
-    """
     matched = []
     for m in d.get("matched_ground_truths", []):
         ri = m["radiologist_instructions"]
