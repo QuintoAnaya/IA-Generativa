@@ -1,11 +1,3 @@
-"""
-Interfaz de usuario del prototipo. Presenta los dos componentes con el
-vocabulario de cada perfil profesional y sin exponer estructuras JSON.
-
-Ejecucion:
-    streamlit run interfaces/app_streamlit.py
-"""
-
 import sys
 from pathlib import Path
 
